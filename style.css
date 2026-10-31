@@ -2,3 +2,25 @@
 @media(max-width:900px){.nav{gap:17px}.hero{padding-left:6%;padding-right:6%}.hero-art{transform:scale(.85)}.service-card{grid-template-columns:1fr}.service-visual{min-height:180px}.service-content{min-height:235px}.section-wrap{padding:80px 6%}}
 @media(max-width:680px){.topline{padding:0 5%;font-size:9px}.header{height:72px;padding:0 5%}.brand-mark{width:37px;height:37px}.brand-name strong{font-size:17px}.brand-name small{font-size:6px}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:22px 6%;box-shadow:0 10px 20px #0001;flex-direction:column}.nav.open{display:flex}.header-actions{gap:8px}.header-actions .btn{display:none}.lang{font-size:11px}.menu-toggle{display:block}.hero{display:block;padding:75px 7% 85px;min-height:auto}.hero h1{font-size:43px}.hero-copy>p{font-size:13px}.hero-art{height:390px;transform:scale(.82);margin:5px -25px 0}.hero-proof{margin-top:35px;line-height:1.7}.hero-bottom{left:7%;right:7%}.intro-grid,.contact{grid-template-columns:1fr;gap:25px}.intro-grid p{font-size:13px}.section-heading{display:block}.section-heading>p{margin-top:16px}.service-grid{grid-template-columns:1fr}.service-card{grid-template-columns:.8fr 1.2fr;min-height:260px}.service-visual{min-height:260px}.service-content{min-height:260px;padding:23px 18px}.service-content h3{font-size:19px}.service-content p{font-size:10px}.promise{padding:75px 7%}.promise-points{gap:20px;display:grid}.contact-form{padding:25px}.footer{padding:25px 6%;gap:18px;flex-wrap:wrap}.footer>span{order:3;width:100%}}
 @media(max-width:430px){.service-card{grid-template-columns:1fr}.service-visual{min-height:175px}.service-content{min-height:230px}.hero-art{margin-left:-45px;margin-right:-45px;transform:scale(.72);height:340px}.card-a{left:0}.card-b{right:0}.hero h1{font-size:38px}}
+
+/* RABATASK visual identity refresh */
+.brand-mark{border-radius:9px 9px 14px 14px;transform:rotate(45deg);width:47px;height:47px;border:2px solid #c69b4c;box-shadow:inset 0 0 0 3px #21072f,0 0 0 1px #c69b4c;background:linear-gradient(145deg,#4b2059,#17051f)}
+.brand-mark b,.brand-mark i{transform:rotate(-45deg);font-weight:700;letter-spacing:-5px}
+.brand-mark b{margin-left:-4px}.brand-mark i{margin-left:-2px}
+.hero{background:linear-gradient(90deg,rgba(25,5,35,.97) 0%,rgba(33,7,47,.90) 48%,rgba(33,7,47,.30) 100%),url('https://images.unsplash.com/photo-158157873*r?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat}
+.hero-photo{background:linear-gradient(135deg,rgba(31,7,44,.22),rgba(31,7,44,.05)),url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=85') center/cover;border:1px solid #d5ac5480;border-radius:4px;box-shadow:0 24px 70px #08020b80}
+.hero-photo .main-panel{background:linear-gradient(145deg,rgba(59,28,72,.92),rgba(25,7,32,.92))}
+.service-grid-six{grid-template-columns:repeat(2,minmax(0,1fr))}
+.service-grid-six .service-card{grid-template-columns:.9fr 1.1fr;min-height:260px}
+.service-grid-six .service-visual{background-size:cover;background-position:center;min-height:260px}
+.service-grid-six .service-visual:before,.service-grid-six .service-visual:after{display:none}
+.service-grid-six .service-visual:after{display:block;inset:0;width:auto;height:auto;border:0;border-radius:0;background:linear-gradient(0deg,rgba(24,5,34,.82),transparent 58%)}
+.service-grid-six .visual-number,.service-grid-six .visual-caption{z-index:2;color:#fff;text-shadow:0 1px 5px #000}
+.photo-restaurant{background-image:url('https://images.unsplash.com/photo-155厨房?auto=format&fit=crop&w=900&q=85'),url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85')}
+.photo-office{background-image:url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=85')}
+.photo-villa{background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85')}
+.photo-post{background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85')}
+.photo-disinfect{background-image:url('https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=900&q=85')}
+.photo-equipment{background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85')}
+@media(max-width:680px){.service-grid-six{grid-template-columns:1fr}.hero-photo{height:360px}.service-grid-six .service-card{grid-template-columns:.8fr 1.2fr}}
+@media(max-width:430px){.service-grid-six .service-card{grid-template-columns:1fr}.service-grid-six .service-visual{min-height:190px}}
