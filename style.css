@@ -1813,3 +1813,35 @@ section[id]{scroll-margin-top:105px}
   }
   .hero-language-switch button {padding:1px 2px}
 }
+
+
+/* Small WhatsApp mark beside the phone number; no layout or image changes */
+.rabatask-hero .nav-phone span {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:6px !important;
+}
+.rabatask-hero .nav-phone .nav-whatsapp-icon {
+  display:inline-block !important;
+  width:14px !important;
+  height:14px !important;
+  flex:0 0 14px !important;
+  fill:#e8bd56 !important;
+  vertical-align:middle !important;
+}
+.rabatask-hero .nav-phone span b {
+  font:inherit !important;
+  font-weight:700 !important;
+}
+.rabatask-hero .nav-phone span i {
+  font-style:normal !important;
+  font-size:1.05em !important;
+  line-height:1 !important;
+}
+@media(max-width:760px) {
+  .rabatask-hero .nav-phone .nav-whatsapp-icon {
+    width:10px !important;height:10px !important;flex-basis:10px !important;
+  }
+  .rabatask-hero .nav-phone span {gap:3px !important}
+}
