@@ -498,3 +498,98 @@ section[id]{scroll-margin-top:105px}
  .brand-lockup em{font-size:7px}
  .luxury-actions .lang{font-size:9px}
 }
+
+
+/* Exact reference-inspired RABATASK header */
+.luxury-header{
+ height:114px;min-height:114px;padding:0 2.8%;gap:clamp(12px,1.7vw,26px);
+ display:flex;align-items:center;justify-content:space-between;position:relative;isolation:isolate;
+ background:linear-gradient(105deg,#17031f 0%,#24042e 52%,#360442 100%);
+ border-bottom:2px solid transparent;
+ border-image:linear-gradient(90deg,#4d155f,#e9bb43,#a91cbd) 1;
+ box-shadow:0 8px 25px rgba(10,0,15,.25)
+}
+.luxury-header:before{content:"";position:absolute;z-index:-1;pointer-events:none;left:29%;top:-75%;width:17%;height:240%;border-right:3px solid #e8b943;border-radius:0 0 90% 0;transform:rotate(23deg);filter:drop-shadow(0 0 6px #c72be7);opacity:.95}
+.luxury-header:after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#9c2eb0 35%,#f2c653 68%,transparent);box-shadow:0 0 12px #be22d9}
+.luxury-brand{position:relative;z-index:2;display:flex;align-items:center;gap:13px;min-width:350px;max-width:405px;text-decoration:none}
+.brand-logo-exact{width:91px;height:91px;flex:0 0 91px;object-fit:contain;object-position:center;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;mix-blend-mode:normal}
+.brand-divider{height:76px;width:2px;flex:0 0 2px;background:linear-gradient(180deg,transparent,#e6b83d 18%,#e6b83d 82%,transparent);box-shadow:0 0 8px rgba(235,190,72,.35)}
+.brand-lockup{display:flex;flex-direction:column;line-height:1.02;white-space:nowrap}
+.brand-lockup strong{font-size:clamp(26px,2.25vw,36px);font-weight:800;letter-spacing:.025em;color:#fff}
+.brand-lockup strong span{color:#e9bb4a}
+.brand-lockup small{font-size:9px;letter-spacing:.26em;font-weight:700;color:#f0c95f;margin-top:6px}
+.brand-lockup em{font-style:normal;color:#f3eaf5;font-size:12px;letter-spacing:.025em;margin-top:9px}
+.brand-lockup em b{color:#efbd45;font-size:17px;margin-right:5px}
+.luxury-nav{position:relative;z-index:4;display:flex;align-items:center;justify-content:center;gap:clamp(13px,1.55vw,25px);flex:1;height:100%;font-size:13px}
+.luxury-nav .nav-link{position:relative;display:flex;align-items:center;height:54px;padding:0 2px;color:#f8f0fa;font-weight:600;white-space:nowrap;transition:color .2s}
+.luxury-nav .nav-link:after{content:"";position:absolute;left:0;right:0;bottom:5px;height:2px;background:linear-gradient(90deg,transparent,#f0c34c,transparent);transform:scaleX(0);transition:transform .2s;box-shadow:0 0 8px #e9b842}
+.luxury-nav .nav-link:hover,.luxury-nav .nav-link.active{color:#f2c64f}
+.luxury-nav .nav-link:hover:after,.luxury-nav .nav-link.active:after{transform:scaleX(1)}
+.nav-dropdown{height:100%;display:flex;align-items:center;position:relative}
+.nav-dropdown-head{display:flex;align-items:center;gap:2px}
+.dropdown-toggle{width:16px;height:28px;padding:0;border:0;background:transparent;color:#eec34c;font-size:16px;cursor:pointer;line-height:1}
+.nav-dropdown.dropdown-open .dropdown-toggle{transform:rotate(180deg)}
+.dropdown-panel{display:none;position:absolute;top:calc(100% - 8px);left:50%;transform:translateX(-50%);width:278px;padding:8px;background:linear-gradient(145deg,#21052e,#120319);border:1px solid #c99c32;border-radius:9px;box-shadow:0 15px 36px #09000dcc;z-index:90}
+.nav-dropdown:hover .dropdown-panel,.nav-dropdown:focus-within .dropdown-panel,.nav-dropdown.dropdown-open .dropdown-panel{display:block;animation:dropIn .16s ease-out}
+@keyframes dropIn{from{opacity:0;transform:translate(-50%,-5px)}to{opacity:1;transform:translate(-50%,0)}}
+.dropdown-panel a{display:flex;align-items:center;gap:12px;padding:10px 9px;border-radius:6px;color:#f8effa;font-size:12px;line-height:1.3;transition:background .2s,color .2s}
+.dropdown-panel a>span:first-child{font-size:18px;color:#efc13e;width:22px;text-align:center}
+.dropdown-panel a:hover{background:linear-gradient(90deg,rgba(218,169,50,.23),rgba(218,169,50,.04));color:#ffd968}
+.luxury-actions{position:relative;z-index:4;display:flex;align-items:center;gap:12px;white-space:nowrap}
+.luxury-actions .lang{display:none!important}
+.whatsapp-header{display:inline-flex;align-items:center;gap:9px;padding:11px 16px;border:1px solid #e9bc45;border-radius:30px;color:#ffe6a0;background:rgba(255,255,255,.025);font-weight:700;font-size:12px;box-shadow:inset 0 0 14px rgba(221,171,43,.06);transition:background .2s,box-shadow .2s}
+.whatsapp-header:hover{background:rgba(221,171,43,.13);box-shadow:0 0 18px rgba(221,171,43,.22)}
+.whatsapp-header span{color:#f2c64f;font-size:17px}
+.luxury-header .menu-toggle{display:none}
+@media(max-width:1220px){
+ .luxury-header{padding:0 1.6%;gap:10px}
+ .luxury-brand{min-width:285px;gap:9px}
+ .brand-logo-exact{width:76px;height:76px;flex-basis:76px}
+ .brand-divider{height:64px}
+ .brand-lockup strong{font-size:26px}
+ .brand-lockup small{font-size:7px}
+ .brand-lockup em{font-size:10px}
+ .luxury-nav{gap:10px;font-size:11px}
+ .whatsapp-header{padding:10px 12px;font-size:11px}
+}
+@media(max-width:980px){
+ .luxury-header{height:92px;min-height:92px;padding:0 4%;justify-content:space-between}
+ .luxury-brand{min-width:0;gap:9px}
+ .brand-logo-exact{width:68px;height:68px;flex-basis:68px}
+ .brand-divider{height:54px}
+ .brand-lockup strong{font-size:22px}
+ .brand-lockup small{font-size:6.5px;letter-spacing:.2em}
+ .brand-lockup em{font-size:9px;margin-top:7px}
+ .luxury-header .menu-toggle{display:block;width:42px;height:40px;color:#f4ca55;border:1px solid rgba(229,184,59,.65);border-radius:7px;background:rgba(255,255,255,.04);font-size:22px}
+ .luxury-nav{display:none;position:absolute;top:92px;left:0;right:0;height:auto;width:100%;padding:14px 5% 20px;flex-direction:column;align-items:stretch;gap:2px;background:linear-gradient(145deg,#1b0527,#2b0a39);border-top:1px solid #b68b35;box-shadow:0 18px 30px #08000dbb;z-index:70}
+ .luxury-nav.open{display:flex!important}
+ .luxury-nav .nav-link{width:100%;height:auto;min-height:46px;justify-content:flex-start;padding:10px 9px;border-bottom:1px solid rgba(255,255,255,.09);font-size:14px}
+ .luxury-nav .nav-link:after{display:none}
+ .nav-dropdown{height:auto;display:block;width:100%}
+ .nav-dropdown-head{width:100%;display:flex;justify-content:space-between;align-items:center}
+ .nav-dropdown-head .nav-link{flex:1}
+ .dropdown-toggle{width:42px;height:42px;font-size:22px}
+ .dropdown-panel{position:static;transform:none;width:100%;margin:3px 0 10px;padding:7px;box-shadow:none;background:#13031d}
+ .nav-dropdown:hover .dropdown-panel{display:none}
+ .nav-dropdown.dropdown-open .dropdown-panel,.nav-dropdown:focus-within .dropdown-panel{display:block}
+}
+@media(max-width:520px){
+ .luxury-header{height:80px;min-height:80px;padding:0 3%;gap:6px}
+ .brand-logo-exact{width:56px;height:56px;flex-basis:56px}
+ .brand-divider{height:44px}
+ .luxury-brand{gap:7px}
+ .brand-lockup strong{font-size:19px}
+ .brand-lockup small{font-size:5.5px;letter-spacing:.17em;margin-top:5px}
+ .brand-lockup em{font-size:8px;margin-top:6px}
+ .luxury-actions{gap:6px}
+ .whatsapp-header{width:37px;height:37px;padding:0;justify-content:center;font-size:0}
+ .whatsapp-header span{font-size:19px}
+ .luxury-header .menu-toggle{width:35px;height:35px;font-size:19px}
+ .luxury-nav{top:80px}
+}
+@media(max-width:370px){
+ .brand-logo-exact{width:49px;height:49px;flex-basis:49px}
+ .brand-lockup strong{font-size:17px}
+ .brand-lockup small{font-size:5px}
+ .brand-lockup em{font-size:7px}
+}
