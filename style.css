@@ -702,3 +702,25 @@ section[id]{scroll-margin-top:105px}
   .luxury-nav .nav-link { padding: 0 7px; }
   .whatsapp-header { padding: 9px 10px; font-size: 10px; }
 }
+
+
+/* RABATASK final header polish — simple four-link navigation */
+.luxury-header{
+  background:radial-gradient(ellipse at 83% 50%,rgba(117,18,135,.28),transparent 34%),linear-gradient(105deg,#17031f 0%,#21032b 54%,#390447 100%);
+}
+.luxury-header:before{left:34%;top:-82%;width:13%;height:260%;border-right:3px solid #e9bb43;filter:drop-shadow(0 0 5px #d42bea)}
+.luxury-nav{gap:clamp(10px,1.25vw,20px)}
+.luxury-nav .nav-link{position:relative;border-radius:28px;padding:0 12px;transition:color .22s ease,background .22s ease,box-shadow .22s ease,transform .22s ease}
+.luxury-nav .nav-link:after{display:block!important;content:"";position:absolute;left:12px;right:12px;bottom:1px;height:2px;background:linear-gradient(90deg,transparent,#f5cf63,#e9ad32,transparent);box-shadow:0 0 9px rgba(245,195,65,.7);transform:scaleX(0);transform-origin:center;transition:transform .24s ease}
+.luxury-nav .nav-link:hover{color:#ffe18a!important;background:linear-gradient(180deg,rgba(244,198,78,.16),rgba(244,198,78,.035));box-shadow:inset 0 0 0 1px rgba(232,185,65,.48),0 0 15px rgba(220,166,42,.13);transform:translateY(-1px)}
+.luxury-nav .nav-link:hover:after,.luxury-nav .nav-link.active:after{transform:scaleX(1)}
+.luxury-nav .nav-link.active{color:#f7cf61!important;background:rgba(226,174,53,.08);box-shadow:inset 0 0 0 1px rgba(232,185,65,.26)}
+.whatsapp-header{background:linear-gradient(110deg,#f4d36e,#dca52e);color:#21072f;border:1px solid #ffe28b;box-shadow:0 0 18px rgba(231,181,57,.22)}
+.whatsapp-header span{color:#21072f}
+.whatsapp-header:hover{background:linear-gradient(110deg,#ffe89a,#e9b83f);box-shadow:0 0 24px rgba(245,198,76,.42);transform:translateY(-1px)}
+@media(min-width:981px){.luxury-nav .nav-link{height:48px;padding:0 10px}}
+@media(max-width:980px){
+ .luxury-header:before{display:none}
+ .luxury-nav .nav-link:hover{background:linear-gradient(90deg,rgba(244,198,78,.16),rgba(244,198,78,.035));box-shadow:inset 3px 0 #e9bb43;transform:none}
+ .luxury-nav .nav-link.active{background:rgba(226,174,53,.1)}
+}
