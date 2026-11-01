@@ -1650,3 +1650,68 @@ section[id]{scroll-margin-top:105px}
   }
   .rabatask-hero .image-nav-hotspot {display:none !important}
 }
+
+
+/* MOBILE ONLY — keep the exact same artwork/header composition as desktop */
+@media (max-width:760px) {
+  /* The complete header is already part of the hero artwork: do not stack a second header over it. */
+  #siteHeader {display:none !important}
+  .rabatask-hero {
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
+    height:auto !important;
+    min-height:0 !important;
+    aspect-ratio:1866 / 843 !important;
+    margin:0 !important;
+    padding:0 !important;
+    border-radius:0 !important;
+    overflow:hidden !important;
+  }
+  .rabatask-hero .rabatask-hero-art {
+    position:absolute !important;
+    inset:0 !important;
+    display:block !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:fill !important;
+    object-position:center top !important;
+  }
+  /* Remove the mobile-only painted cover; it was obscuring the artwork's own header. */
+  .rabatask-hero::before {display:none !important;content:none !important}
+  /* Keep the transparent click targets, scaled to the same positions as desktop. */
+  .rabatask-hero .image-nav-hotspot {
+    display:block !important;
+    top:6.2% !important;
+    height:8.4% !important;
+    padding:0 !important;
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+  }
+  .rabatask-hero .image-nav-hotspot span {display:none !important}
+  .rabatask-hero .nav-home {left:39.3% !important;width:4.7% !important}
+  .rabatask-hero .nav-services {left:46.1% !important;width:8.7% !important}
+  .rabatask-hero .nav-about {left:57.1% !important;width:5.3% !important}
+  .rabatask-hero .nav-why {left:64.5% !important;width:8.5% !important}
+  .rabatask-hero .nav-contact {left:75.1% !important;width:5.1% !important}
+  .rabatask-hero .nav-phone {
+    display:block !important;
+    left:83.2% !important;
+    top:5.8% !important;
+    width:13.1% !important;
+    height:9.4% !important;
+  }
+  .rabatask-hero .hero-hotspot-services {
+    left:28.2% !important;
+    top:77.7% !important;
+    width:21.1% !important;
+    height:9% !important;
+  }
+  .rabatask-hero .hero-hotspot-whatsapp {
+    left:50.8% !important;
+    top:77.7% !important;
+    width:20.8% !important;
+    height:9% !important;
+  }
+}
