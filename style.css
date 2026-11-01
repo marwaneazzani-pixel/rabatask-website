@@ -2400,11 +2400,16 @@ section[id]{scroll-margin-top:105px}
   .footer .mobile-footer-banner {
     display:block !important;
     width:100% !important;
+    max-width:100% !important;
     height:auto !important;
-    aspect-ratio:960 / 312 !important;
-    object-fit:cover !important;
-    object-position:center !important;
+    aspect-ratio:auto !important;
+    object-fit:contain !important;
+    object-position:center center !important;
     margin:0 0 7px !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:0 !important;
+    transform:none !important;
   }
   .footer .footer-brand {display:none !important}
   .footer>span {
