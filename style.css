@@ -2283,3 +2283,100 @@ section[id]{scroll-margin-top:105px}
     border-color:rgba(230,190,87,.75) !important;
   }
 }
+
+
+/* FINAL PHONE HEADER FIX: compact contact action + visible, reliable menu */
+@media screen and (max-width:760px) {
+  #siteHeader {
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:7px !important;
+    width:100% !important;
+    padding:6px 9px !important;
+    overflow:visible !important;
+  }
+  #siteHeader .luxury-brand {
+    flex:1 1 0 !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    overflow:hidden !important;
+    gap:5px !important;
+  }
+  #siteHeader .brand-logo-exact {
+    width:48px !important;height:48px !important;flex:0 0 48px !important;
+  }
+  #siteHeader .brand-divider {height:40px !important;flex:0 0 1px !important}
+  #siteHeader .brand-lockup {min-width:0 !important;overflow:hidden !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(14px,4vw,18px) !important}
+  #siteHeader .brand-lockup small {font-size:5.5px !important;letter-spacing:.07em !important}
+  #siteHeader .brand-lockup em {font-size:7px !important;white-space:nowrap !important}
+  #siteHeader .luxury-actions {
+    display:flex !important;flex:0 0 auto !important;
+    position:static !important;align-items:center !important;gap:7px !important;
+  }
+  #siteHeader .whatsapp-header {
+    display:inline-flex !important;flex:0 0 34px !important;
+    width:34px !important;min-width:34px !important;height:34px !important;
+    padding:0 !important;align-items:center !important;justify-content:center !important;
+    border:1px solid rgba(225,187,82,.72) !important;border-radius:50% !important;
+    background:rgba(255,255,255,.04) !important;font-size:0 !important;
+    line-height:1 !important;white-space:nowrap !important;
+  }
+  #siteHeader .header-wa-icon {font-size:17px !important;color:#f2cf72 !important}
+  #siteHeader .header-wa-number {display:none !important}
+  #siteHeader .menu-toggle {
+    display:inline-flex !important;visibility:visible !important;opacity:1 !important;
+    flex:0 0 40px !important;width:40px !important;height:40px !important;
+    align-items:center !important;justify-content:center !important;
+    padding:0 !important;margin:0 !important;border:1px solid #e2bb53 !important;
+    border-radius:8px !important;background:rgba(255,255,255,.04) !important;
+    color:#f6d77c !important;font-size:22px !important;line-height:1 !important;
+    cursor:pointer !important;position:relative !important;z-index:700 !important;
+  }
+  #siteHeader .luxury-nav,
+  #siteHeader nav#mainNav {
+    display:none !important;position:absolute !important;
+    top:calc(100% + 1px) !important;left:9px !important;right:9px !important;
+    width:auto !important;height:auto !important;min-height:0 !important;
+    padding:9px !important;margin:0 !important;gap:3px !important;
+    flex-direction:column !important;align-items:stretch !important;
+    background:#21072f !important;border:1px solid rgba(225,187,82,.65) !important;
+    border-radius:9px !important;box-shadow:0 14px 28px rgba(0,0,0,.35) !important;
+    z-index:650 !important;
+  }
+  #siteHeader .luxury-nav.open,
+  #siteHeader nav#mainNav.open {display:flex !important}
+  #siteHeader .luxury-nav .nav-link,
+  #siteHeader .luxury-nav .nav-dropdown-head .nav-link {
+    display:flex !important;align-items:center !important;
+    width:100% !important;min-height:42px !important;height:auto !important;
+    padding:10px 12px !important;color:#fff2d8 !important;
+    font-size:14px !important;text-decoration:none !important;
+    background:transparent !important;border:0 !important;box-shadow:none !important;
+  }
+  #siteHeader .luxury-nav .nav-link.active {
+    color:#f2cc68 !important;background:rgba(226,187,83,.09) !important;
+  }
+  #siteHeader .luxury-nav .nav-dropdown,
+  #siteHeader .luxury-nav .nav-dropdown-head {display:flex !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .nav-dropdown-head {align-items:center !important}
+  #siteHeader .luxury-nav .dropdown-toggle {
+    display:inline-flex !important;align-items:center !important;justify-content:center !important;
+    width:38px !important;height:38px !important;margin-left:auto !important;
+    color:#eac35e !important;background:transparent !important;border:0 !important;
+  }
+  #siteHeader .luxury-nav .dropdown-panel {
+    display:none !important;position:static !important;width:100% !important;
+    min-width:0 !important;transform:none !important;padding:4px 0 4px 12px !important;
+    background:rgba(255,255,255,.035) !important;
+  }
+  #siteHeader .luxury-nav .nav-dropdown.dropdown-open .dropdown-panel,
+  #siteHeader .luxury-nav .nav-dropdown:focus-within .dropdown-panel {display:block !important}
+  #siteHeader .luxury-nav .dropdown-panel a {
+    display:flex !important;align-items:center !important;min-height:38px !important;
+    padding:8px 10px !important;color:#f4e8d4 !important;font-size:12px !important;
+  }
+}
