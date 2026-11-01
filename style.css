@@ -2180,3 +2180,106 @@ section[id]{scroll-margin-top:105px}
     background:rgba(255,255,255,.035) !important;color:#fff3d4 !important;
   }
 }
+
+
+/* MOBILE HERO REBUILD — one header, one set of copy and buttons; desktop untouched */
+@media screen and (max-width:760px) {
+  /* Use the official HTML header once. The wide desktop artwork already contains
+     its own logo, navigation and headline, so it must not be rendered on mobile. */
+  #siteHeader {
+    display:flex !important;
+    height:76px !important;
+    min-height:76px !important;
+    padding:7px 10px !important;
+    background:linear-gradient(110deg,#1b0427 0%,#2d0a3b 100%) !important;
+    border-bottom:1px solid rgba(225,187,82,.58) !important;
+  }
+  #siteHeader .brand-logo-exact {
+    display:block !important;width:58px !important;height:58px !important;
+    flex:0 0 58px !important;object-fit:contain !important;
+  }
+  #siteHeader .brand-divider {display:block !important;height:46px !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(16px,4.7vw,21px) !important}
+  #siteHeader .brand-lockup small {font-size:6.5px !important}
+  #siteHeader .brand-lockup em {font-size:8px !important}
+  #siteHeader .whatsapp-header {height:34px !important;padding:0 8px !important;font-size:8px !important}
+  #siteHeader .menu-toggle {display:inline-flex !important;width:36px !important;height:36px !important;flex:0 0 36px !important}
+
+  .rabatask-hero {
+    display:flex !important;flex-direction:column !important;
+    position:relative !important;width:100% !important;height:auto !important;
+    min-height:0 !important;aspect-ratio:auto !important;overflow:visible !important;
+    margin:0 !important;padding:0 !important;border-radius:0 !important;
+    background:
+      radial-gradient(ellipse at 92% 12%,rgba(117,25,137,.3),transparent 38%),
+      linear-gradient(145deg,#260831 0%,#180321 70%,#23062f 100%) !important;
+    box-shadow:none !important;
+  }
+  /* Critical: remove desktop artwork on mobile to prevent its baked-in logo,
+     navigation, phone number and hero copy from duplicating the HTML content. */
+  .rabatask-hero .rabatask-hero-art {display:none !important}
+  .rabatask-hero .image-nav-hotspot,
+  .rabatask-hero .hero-hotspot,
+  .rabatask-hero .hero-hotspot-services,
+  .rabatask-hero .hero-hotspot-whatsapp {display:none !important}
+  .rabatask-hero::before,.rabatask-hero::after {display:none !important;content:none !important}
+
+  .rabatask-hero .hero-language-switch {
+    order:0 !important;position:relative !important;inset:auto !important;
+    display:flex !important;width:100% !important;height:42px !important;
+    align-items:center !important;justify-content:flex-end !important;
+    padding:0 18px !important;gap:10px !important;
+    background:transparent !important;font-size:11px !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile {
+    order:1 !important;display:block !important;position:relative !important;
+    width:100% !important;padding:27px 20px 28px !important;
+    background:transparent !important;color:#fff !important;text-align:left !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile::before {
+    content:"";display:block;width:46px;height:2px;margin:0 0 17px;
+    background:linear-gradient(90deg,#f4d47d,#c58a28);
+    box-shadow:0 0 12px rgba(244,212,125,.28);
+  }
+  .rabatask-hero .rabatask-hero-mobile p {
+    margin:0 0 11px !important;color:#e9c66e !important;
+    font-size:9px !important;font-weight:700 !important;
+    letter-spacing:.13em !important;line-height:1.55 !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile h1 {
+    max-width:580px !important;margin:0 0 14px !important;
+    color:#fff !important;font-size:clamp(28px,7.8vw,36px) !important;
+    font-weight:600 !important;line-height:1.12 !important;letter-spacing:-.025em !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile h1 strong {
+    display:block !important;color:#edc45f !important;font-weight:700 !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile>span {
+    display:block !important;max-width:560px !important;
+    color:#eee5f2 !important;font-size:14px !important;
+    line-height:1.7 !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile-actions {
+    display:grid !important;grid-template-columns:1fr !important;
+    gap:11px !important;margin-top:23px !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile-actions a {
+    display:flex !important;width:100% !important;min-height:52px !important;
+    align-items:center !important;justify-content:center !important;
+    padding:0 17px !important;border:1px solid #dcb64e !important;
+    border-radius:8px !important;text-decoration:none !important;
+    font-size:14px !important;font-weight:700 !important;letter-spacing:.01em !important;
+    transition:transform .2s ease,filter .2s ease !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile-actions a:active {
+    transform:scale(.985) !important;filter:brightness(.96) !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile-actions a:first-child {
+    color:#260b31 !important;background:linear-gradient(110deg,#f5d577,#dcae38) !important;
+    border-color:#f0ce70 !important;box-shadow:0 8px 22px rgba(219,173,61,.18) !important;
+  }
+  .rabatask-hero .rabatask-hero-mobile-actions a:last-child {
+    color:#ffedc2 !important;background:rgba(255,255,255,.035) !important;
+    border-color:rgba(230,190,87,.75) !important;
+  }
+}
