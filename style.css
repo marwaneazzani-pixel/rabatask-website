@@ -385,3 +385,24 @@ section[id]{scroll-margin-top:105px}
  .brand-copy em{font-size:8px}
  .luxury-actions .lang{font-size:10px}
 }
+
+
+/* Final header alignment to the approved single-bar reference */
+.luxury-header{position:relative;isolation:isolate;overflow:visible;background:linear-gradient(105deg,#17031f 0%,#250532 52%,#3a0750 100%)}
+.luxury-header:before{content:"";position:absolute;z-index:-1;pointer-events:none;left:27%;top:-65%;width:22%;height:230%;border-right:3px solid #f0c04b;border-radius:0 0 100% 0;transform:rotate(18deg);filter:drop-shadow(0 0 5px #f5c24a) drop-shadow(0 0 13px #c000d8);opacity:.9}
+.luxury-header:after{content:"";position:absolute;z-index:-1;pointer-events:none;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#8c22a4 48%,#d9a92d 75%,transparent);box-shadow:0 0 12px #c82be7}
+.brand-logo-exact{display:block;width:94px;height:94px;flex:0 0 94px;border:0!important;border-radius:50%!important;object-fit:contain;object-position:center;background:transparent!important;box-shadow:none!important;mix-blend-mode:multiply}
+.luxury-brand{min-width:385px;position:relative;z-index:2}
+.brand-copy{position:relative;z-index:2}
+.luxury-nav,.luxury-actions{position:relative;z-index:3}
+.home-anchor{height:0;scroll-margin-top:112px}
+@media(max-width:1180px){
+ .brand-logo-exact{width:76px;height:76px;flex-basis:76px}
+}
+@media(max-width:900px){
+ .luxury-header:before{left:12%;width:20%;opacity:.55}
+ .brand-logo-exact{width:68px;height:68px;flex-basis:68px}
+}
+@media(max-width:520px){
+ .brand-logo-exact{width:53px;height:53px;flex-basis:53px}
+}
