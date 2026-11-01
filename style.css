@@ -109,7 +109,7 @@
   width:100%;
   height:auto!important;
   min-height:0!important;
-  aspect-ratio:1600/800;
+  aspect-ratio:1900/740;
   overflow:hidden;
   padding:0!important;
   margin:0;
@@ -132,8 +132,8 @@
   border-radius:40px;
   background:transparent;
 }
-.hero-hotspot-services{left:6.5%;top:59%;width:17%;height:9%}
-.hero-hotspot-whatsapp{left:24%;top:59%;width:17%;height:9%}
+.hero-hotspot-services{left:6.3%;top:77%;width:12.5%;height:9%}
+.hero-hotspot-whatsapp{left:19.7%;top:77%;width:12.3%;height:9%}
 @media(max-width:700px){
  .hero-banner{aspect-ratio:1/1.25}
  .hero-banner-image{object-fit:cover;object-position:48% top}
