@@ -86,3 +86,28 @@ if(quoteForm) quoteForm.addEventListener('submit',event=>{
 });
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
+
+
+/* Gentle scroll-in reveals; keeps all existing content and links unchanged */
+(function initRabataskMotion(){
+  const targets=document.querySelectorAll(
+    '.section-kicker, .intro h2, .intro-grid p, .section-heading h2, .section-heading>p, .service-card, .promise h2, .promise-points, .contact-copy, .contact-form'
+  );
+  if(!targets.length) return;
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    targets.forEach(el=>el.classList.add('is-visible'));
+    return;
+  }
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+  targets.forEach(el=>{
+    el.classList.add('rabatask-reveal');
+    observer.observe(el);
+  });
+})();
