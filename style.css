@@ -1813,29 +1813,3 @@ section[id]{scroll-margin-top:105px}
   }
   .hero-language-switch button {padding:1px 2px}
 }
-
-
-/* Premium continuous brand sweep beneath the navigation */
-.rabatask-hero {
-  isolation:isolate;
-}
-.rabatask-hero::after {
-  content:"" !important;
-  display:block !important;
-  position:absolute !important;
-  z-index:16 !important;
-  pointer-events:none !important;
-  left:0 !important;
-  right:0 !important;
-  top:0 !important;
-  width:100% !important;
-  height:21% !important;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1866 180' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='line' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23d9ad43' stop-opacity='.15'/%3E%3Cstop offset='.22' stop-color='%23f0c75f'/%3E%3Cstop offset='.48' stop-color='%23f2b5f5'/%3E%3Cstop offset='.72' stop-color='%23d94be8'/%3E%3Cstop offset='1' stop-color='%23e5bd57' stop-opacity='.55'/%3E%3C/linearGradient%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='4' result='blur'/%3E%3CfeMerge%3E%3CfeMergeNode in='blur'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M0 170 C160 165 205 125 260 55 C278 30 292 22 325 22 L1866 22' fill='none' stroke='url(%23line)' stroke-width='3' filter='url(%23glow)'/%3E%3Cpath d='M0 170 C160 165 205 125 260 55 C278 30 292 22 325 22 L1866 22' fill='none' stroke='url(%23line)' stroke-width='1.2'/%3E%3C/svg%3E") center top / 100% 100% no-repeat;
-}
-@media(max-width:760px) {
-  .rabatask-hero::after {
-    height:21% !important;
-    background-size:100% 100% !important;
-  }
-}
