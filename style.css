@@ -1845,3 +1845,156 @@ section[id]{scroll-margin-top:105px}
   }
   .rabatask-hero .nav-phone span {gap:3px !important}
 }
+
+
+/* MOBILE ONLY: larger, readable header and hero; desktop rules remain untouched */
+@media (max-width:760px) {
+  #siteHeader {
+    display:flex !important;
+    position:relative !important;
+    z-index:200 !important;
+    width:100% !important;
+    min-height:78px !important;
+    height:78px !important;
+    padding:7px 10px !important;
+    margin:0 !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:8px !important;
+    overflow:visible !important;
+    background:linear-gradient(110deg,#190323,#2a0735 70%,#21052d) !important;
+    border-bottom:1px solid rgba(225,184,77,.6) !important;
+    box-shadow:0 5px 18px rgba(0,0,0,.2) !important;
+  }
+  #siteHeader .luxury-brand {
+    display:flex !important;
+    flex:1 1 auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    gap:7px !important;
+    align-items:center !important;
+  }
+  #siteHeader .brand-logo-exact {
+    display:block !important;
+    width:62px !important;
+    height:62px !important;
+    flex:0 0 62px !important;
+    object-fit:contain !important;
+  }
+  #siteHeader .brand-divider {display:block !important;height:48px !important}
+  #siteHeader .brand-lockup {display:flex !important;flex-direction:column !important;min-width:0 !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(17px,4.7vw,21px) !important;line-height:1 !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup small {font-size:7px !important;letter-spacing:.1em !important;margin-top:4px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em {font-size:8px !important;margin-top:5px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em b {font-size:10px !important}
+  #siteHeader .luxury-actions {
+    position:static !important;
+    display:flex !important;
+    flex:0 0 auto !important;
+    align-items:center !important;
+    gap:6px !important;
+  }
+  #siteHeader .whatsapp-header {
+    display:inline-flex !important;
+    min-width:0 !important;
+    height:34px !important;
+    padding:0 8px !important;
+    gap:4px !important;
+    border-radius:18px !important;
+    font-size:9px !important;
+    white-space:nowrap !important;
+  }
+  #siteHeader .menu-toggle {
+    display:inline-flex !important;
+    flex:0 0 36px !important;
+    width:36px !important;
+    height:36px !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border:1px solid rgba(235,194,89,.7) !important;
+    border-radius:8px !important;
+    color:#f6d77c !important;
+    background:rgba(255,255,255,.05) !important;
+    font-size:21px !important;
+  }
+  #siteHeader .luxury-nav {
+    display:none !important;
+    position:absolute !important;
+    z-index:300 !important;
+    top:calc(100% + 1px) !important;
+    left:10px !important;
+    right:10px !important;
+    width:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    padding:10px !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    gap:4px !important;
+    border:1px solid rgba(224,185,79,.48) !important;
+    border-radius:10px !important;
+    background:linear-gradient(145deg,#260932,#16031f) !important;
+    box-shadow:0 16px 35px rgba(0,0,0,.48) !important;
+  }
+  #siteHeader .luxury-nav.open {display:flex !important}
+  #siteHeader .luxury-nav .nav-link,
+  #siteHeader .luxury-nav .nav-dropdown-head .nav-link {
+    display:flex !important;
+    width:100% !important;
+    min-height:42px !important;
+    height:auto !important;
+    justify-content:flex-start !important;
+    padding:10px 12px !important;
+    color:#f4eaf5 !important;
+    font-size:14px !important;
+    text-decoration:none !important;
+    background:transparent !important;
+    border:1px solid transparent !important;
+    box-shadow:none !important;
+  }
+  #siteHeader .luxury-nav .nav-link.active {
+    color:#28102f !important;
+    background:linear-gradient(110deg,#ffe58a,#dca52e) !important;
+  }
+  #siteHeader .luxury-nav .nav-dropdown {display:block !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .nav-dropdown-head {display:flex !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .dropdown-panel {position:static !important;display:none !important;width:100% !important;min-width:0 !important;transform:none !important}
+  #siteHeader .luxury-nav .nav-dropdown.dropdown-open .dropdown-panel,
+  #siteHeader .luxury-nav .nav-dropdown:focus-within .dropdown-panel {display:block !important}
+
+  .rabatask-hero {
+    width:100% !important;
+    max-width:none !important;
+    height:auto !important;
+    min-height:0 !important;
+    aspect-ratio:1.18 / 1 !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+    border-radius:0 !important;
+  }
+  .rabatask-hero .rabatask-hero-art {
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:50% 54% !important;
+  }
+  /* The artwork already contains its desktop header; use the real mobile header above instead. */
+  .rabatask-hero .image-nav-hotspot,
+  .rabatask-hero .hero-language-switch {display:none !important}
+  .rabatask-hero::before {display:none !important;content:none !important}
+  .rabatask-hero .hero-hotspot-services {
+    left:8% !important;
+    top:82% !important;
+    width:40% !important;
+    height:12% !important;
+  }
+  .rabatask-hero .hero-hotspot-whatsapp {
+    left:51% !important;
+    top:82% !important;
+    width:41% !important;
+    height:12% !important;
+  }
+}
