@@ -622,3 +622,83 @@ section[id]{scroll-margin-top:105px}
 @media(min-width:701px) and (max-width:1050px){
  .rabatask-hero-art{min-height:300px;object-fit:cover}
 }
+
+
+/* Header lockup — proportions matched to the supplied RABATASK reference */
+@media (min-width: 981px) {
+  .luxury-header {
+    height: 143px;
+    min-height: 143px;
+    padding: 0 20px;
+    gap: 12px;
+    background: linear-gradient(105deg,#17031f 0%,#21032b 54%,#390447 100%);
+  }
+  .luxury-brand {
+    flex: 0 0 455px;
+    min-width: 455px;
+    max-width: 455px;
+    gap: 14px;
+  }
+  .brand-logo-exact {
+    width: 120px;
+    height: 120px;
+    flex: 0 0 120px;
+    object-fit: contain;
+  }
+  .brand-divider {
+    height: 82px;
+    width: 2px;
+    flex: 0 0 2px;
+  }
+  .brand-lockup strong {
+    font-size: 36px;
+    letter-spacing: .015em;
+    line-height: 1;
+  }
+  .brand-lockup small {
+    font-size: 10px;
+    letter-spacing: .19em;
+    margin-top: 5px;
+  }
+  .brand-lockup em {
+    font-size: 15px;
+    margin-top: 9px;
+  }
+  .brand-lockup em b { font-size: 19px; }
+  .luxury-nav {
+    gap: 12px;
+    font-size: 13px;
+    justify-content: flex-start;
+  }
+  .luxury-nav .nav-link {
+    height: 40px;
+    padding: 0 11px;
+    border-radius: 24px;
+  }
+  .luxury-nav .nav-link:after { display: none; }
+  .luxury-nav .nav-link.active {
+    color: #21102a;
+    background: linear-gradient(180deg,#ffe27a,#d99c24);
+    box-shadow: 0 2px 10px rgba(241,190,61,.35);
+  }
+  .luxury-nav .nav-link:hover:not(.active) {
+    color: #f3c64e;
+  }
+  .luxury-actions { gap: 8px; }
+  .whatsapp-header {
+    padding: 10px 13px;
+    font-size: 12px;
+    gap: 8px;
+  }
+}
+@media (min-width: 981px) and (max-width: 1120px) {
+  .luxury-header { padding: 0 14px; gap: 7px; }
+  .luxury-brand { flex-basis: 405px; min-width: 405px; max-width: 405px; gap: 10px; }
+  .brand-logo-exact { width: 104px; height: 104px; flex-basis: 104px; }
+  .brand-lockup strong { font-size: 31px; }
+  .brand-lockup small { font-size: 8px; }
+  .brand-lockup em { font-size: 12px; }
+  .luxury-nav { gap: 4px; font-size: 11px; }
+  .luxury-nav .nav-link { padding: 0 7px; }
+  .whatsapp-header { padding: 9px 10px; font-size: 10px; }
+}
