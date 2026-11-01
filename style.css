@@ -1219,3 +1219,91 @@ section[id]{scroll-margin-top:105px}
   outline:2px solid #f5cf69 !important;
   outline-offset:3px !important;
 }
+
+
+/* Custom animated text navigation: visible, tactile controls layered over the artwork */
+.rabatask-hero .image-nav-hotspot {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:visible !important;
+  padding:0 7px !important;
+  color:#f8e8b8 !important;
+  text-decoration:none !important;
+  font-family:"DM Sans",sans-serif !important;
+  font-size:clamp(9px,.83vw,13px) !important;
+  font-weight:650 !important;
+  letter-spacing:.015em !important;
+  white-space:nowrap !important;
+  border:1px solid rgba(230,190,91,.28) !important;
+  border-radius:999px !important;
+  background:linear-gradient(135deg,rgba(34,8,47,.92),rgba(66,18,76,.84)) !important;
+  box-shadow:0 5px 18px rgba(9,1,15,.2),inset 0 1px rgba(255,255,255,.09) !important;
+  backdrop-filter:blur(8px);
+  transition:color .25s ease,background .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease !important;
+}
+.rabatask-hero .image-nav-hotspot span {
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  transform:translateX(0);
+  transition:transform .28s cubic-bezier(.2,.8,.2,1),letter-spacing .28s ease;
+}
+.rabatask-hero .image-nav-hotspot::after {
+  content:"↗";
+  display:inline-block;
+  max-width:0;
+  margin-left:0;
+  opacity:0;
+  overflow:hidden;
+  color:#fff0b0;
+  transform:translateX(-5px);
+  transition:all .25s ease;
+}
+.rabatask-hero .image-nav-hotspot:hover,
+.rabatask-hero .image-nav-hotspot:focus-visible {
+  color:#2b1231 !important;
+  border-color:#f6d477 !important;
+  background:linear-gradient(115deg,#ffe9a0 0%,#e8b94d 55%,#c98a27 100%) !important;
+  box-shadow:0 8px 25px rgba(225,174,60,.34),0 0 0 3px rgba(246,212,119,.13),inset 0 1px rgba(255,255,255,.65) !important;
+  transform:translateY(-4px) scale(1.045) !important;
+  outline:none !important;
+}
+.rabatask-hero .image-nav-hotspot:hover span,
+.rabatask-hero .image-nav-hotspot:focus-visible span {
+  transform:translateX(-3px);
+  letter-spacing:.035em;
+}
+.rabatask-hero .image-nav-hotspot:hover::after,
+.rabatask-hero .image-nav-hotspot:focus-visible::after {
+  max-width:18px;
+  margin-left:5px;
+  opacity:1;
+  transform:translateX(0);
+}
+.rabatask-hero .nav-home {left:38.9%;width:5.5%}
+.rabatask-hero .nav-services {left:45.6%;width:9.7%}
+.rabatask-hero .nav-about {left:56.7%;width:6.2%}
+.rabatask-hero .nav-why {left:64.1%;width:9.3%}
+.rabatask-hero .nav-contact {left:74.8%;width:6.1%}
+.rabatask-hero .nav-phone {
+  left:82.8%;
+  width:13.8%;
+  font-size:clamp(9px,.9vw,14px) !important;
+  color:#2b1730 !important;
+  border-color:#f1cf76 !important;
+  background:linear-gradient(115deg,#ffe69a,#dca638) !important;
+  box-shadow:0 5px 18px rgba(218,169,61,.24),inset 0 1px rgba(255,255,255,.7) !important;
+}
+.rabatask-hero .nav-phone:hover {
+  background:linear-gradient(115deg,#fff0b8,#f0c55e) !important;
+  box-shadow:0 9px 28px rgba(231,183,72,.4),0 0 0 3px rgba(246,212,119,.17) !important;
+}
+@media(max-width:760px) {
+  .rabatask-hero .image-nav-hotspot {
+    font-size:clamp(6px,1.45vw,10px) !important;
+    padding:0 2px !important;
+    border-radius:999px !important;
+  }
+  .rabatask-hero .nav-phone {font-size:clamp(6px,1.5vw,10px) !important}
+}
