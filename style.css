@@ -2055,3 +2055,49 @@ section[id]{scroll-margin-top:105px}
   .rabatask-hero .rabatask-hero-mobile-actions a:first-child {background:linear-gradient(110deg,#ffe18a,#dca52e) !important;color:#260b31 !important}
   .rabatask-hero .hero-hotspot-services,.rabatask-hero .hero-hotspot-whatsapp {display:none !important}
 }
+
+
+/* MOBILE CLEAN LAYOUT — final override; desktop is not affected */
+@media screen and (max-width:760px) {
+  html,body {max-width:100%;overflow-x:hidden}
+  #siteHeader {
+    display:flex !important;position:relative !important;z-index:500 !important;
+    width:100% !important;height:72px !important;min-height:72px !important;
+    padding:6px 9px !important;margin:0 !important;gap:6px !important;
+    align-items:center !important;justify-content:space-between !important;
+    overflow:visible !important;background:#21072c !important;
+    border-bottom:1px solid rgba(226,187,83,.55) !important;box-shadow:none !important;
+  }
+  #siteHeader .luxury-brand {display:flex !important;flex:1 1 auto !important;min-width:0 !important;gap:6px !important;align-items:center !important}
+  #siteHeader .brand-logo-exact {display:block !important;width:52px !important;height:52px !important;flex:0 0 52px !important;object-fit:contain !important}
+  #siteHeader .brand-divider {display:block !important;height:42px !important}
+  #siteHeader .brand-lockup {display:flex !important;flex-direction:column !important;min-width:0 !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(15px,4.5vw,20px) !important;line-height:1 !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup small {font-size:6px !important;letter-spacing:.08em !important;margin-top:3px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em {font-size:7px !important;margin-top:4px !important;white-space:nowrap !important}
+  #siteHeader .luxury-actions {display:flex !important;position:static !important;flex:0 0 auto !important;align-items:center !important;gap:6px !important}
+  #siteHeader .whatsapp-header {display:inline-flex !important;align-items:center !important;justify-content:center !important;height:32px !important;padding:0 8px !important;font-size:8px !important;white-space:nowrap !important}
+  #siteHeader .menu-toggle {display:inline-flex !important;flex:0 0 34px !important;width:34px !important;height:34px !important;align-items:center !important;justify-content:center !important;padding:0 !important;border:1px solid #dcb64e !important;border-radius:7px !important;background:transparent !important;color:#f3d47c !important;font-size:20px !important}
+  #siteHeader .luxury-nav {display:none !important;position:absolute !important;z-index:600 !important;top:100% !important;left:8px !important;right:8px !important;width:auto !important;height:auto !important;min-height:0 !important;padding:8px !important;flex-direction:column !important;align-items:stretch !important;gap:3px !important;background:#21072c !important;border:1px solid rgba(226,187,83,.65) !important;border-radius:8px !important;box-shadow:0 12px 28px rgba(0,0,0,.35) !important}
+  #siteHeader .luxury-nav.open {display:flex !important}
+  #siteHeader .luxury-nav .nav-link,#siteHeader .luxury-nav .nav-dropdown-head .nav-link {display:flex !important;align-items:center !important;width:100% !important;min-height:42px !important;padding:10px 12px !important;color:#f8edda !important;font-size:14px !important;text-decoration:none !important;background:transparent !important;border:0 !important;box-shadow:none !important}
+  #siteHeader .luxury-nav .nav-link.active {color:#f1cd70 !important;background:rgba(230,188,83,.1) !important}
+  #siteHeader .luxury-nav .nav-dropdown,#siteHeader .luxury-nav .nav-dropdown-head {display:block !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .dropdown-panel {display:none !important;position:static !important;width:100% !important;min-width:0 !important;transform:none !important;background:rgba(255,255,255,.04) !important}
+  #siteHeader .luxury-nav .nav-dropdown.dropdown-open .dropdown-panel,#siteHeader .luxury-nav .nav-dropdown:focus-within .dropdown-panel {display:block !important}
+  #siteHeader .luxury-nav .dropdown-panel a {display:flex !important;min-height:38px !important;align-items:center !important;padding:8px 12px !important;color:#f4e8d4 !important;font-size:12px !important}
+
+  .rabatask-hero {display:block !important;position:relative !important;width:100% !important;max-width:none !important;height:auto !important;min-height:0 !important;aspect-ratio:1.62 / 1 !important;margin:0 !important;padding:0 !important;overflow:hidden !important;border-radius:0 !important}
+  .rabatask-hero .rabatask-hero-art {position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;object-fit:cover !important;object-position:center bottom !important}
+  .rabatask-hero .image-nav-hotspot,.rabatask-hero .hero-hotspot-services,.rabatask-hero .hero-hotspot-whatsapp {display:none !important}
+  .rabatask-hero::before,.rabatask-hero::after {display:none !important;content:none !important}
+  .rabatask-hero .hero-language-switch {display:flex !important;position:relative !important;z-index:10 !important;left:auto !important;top:auto !important;width:100% !important;height:34px !important;justify-content:flex-end !important;padding:0 14px !important;gap:10px !important;background:#21072c !important;font-size:11px !important}
+  .rabatask-hero .rabatask-hero-mobile {display:block !important;position:relative !important;z-index:5 !important;padding:20px 16px 22px !important;background:#21072c !important;color:#fff !important;text-align:left !important}
+  .rabatask-hero .rabatask-hero-mobile p {margin:0 0 8px !important;color:#e9c45e !important;font-size:10px !important;letter-spacing:.1em !important}
+  .rabatask-hero .rabatask-hero-mobile h1 {margin:0 0 10px !important;font-size:clamp(23px,6vw,30px) !important;line-height:1.12 !important}
+  .rabatask-hero .rabatask-hero-mobile h1 strong {color:#eac15a !important}
+  .rabatask-hero .rabatask-hero-mobile>span {display:block !important;color:#f1e8f3 !important;font-size:14px !important;line-height:1.5 !important}
+  .rabatask-hero .rabatask-hero-mobile-actions {display:flex !important;flex-direction:column !important;gap:10px !important;margin-top:17px !important}
+  .rabatask-hero .rabatask-hero-mobile-actions a {display:flex !important;width:100% !important;min-height:46px !important;align-items:center !important;justify-content:center !important;padding:0 14px !important;border:1px solid #dcb64e !important;border-radius:6px !important;color:#f8e8bd !important;text-decoration:none !important;font-size:14px !important;font-weight:700 !important}
+  .rabatask-hero .rabatask-hero-mobile-actions a:first-child {background:#e5b83e !important;color:#260b31 !important}
+}
