@@ -1510,3 +1510,143 @@ section[id]{scroll-margin-top:105px}
   }
   .rabatask-hero .nav-phone {top:3% !important;font-size:clamp(6px,1.35vw,10px) !important}
 }
+
+
+/* MOBILE ONLY: restore the real responsive header; desktop remains untouched */
+@media (max-width:760px) {
+  #siteHeader {
+    display:flex !important;
+    position:relative !important;
+    z-index:200 !important;
+    width:100% !important;
+    height:82px !important;
+    min-height:82px !important;
+    padding:7px 12px !important;
+    margin:0 !important;
+    gap:8px !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    overflow:visible !important;
+    background:linear-gradient(110deg,#190323,#2a0735 70%,#21052d) !important;
+    border-bottom:1px solid rgba(225,184,77,.65) !important;
+    box-shadow:0 5px 18px rgba(0,0,0,.22) !important;
+  }
+  #siteHeader .luxury-brand {
+    display:flex !important;
+    flex:1 1 auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    gap:7px !important;
+    align-items:center !important;
+  }
+  #siteHeader .brand-logo-exact {
+    display:block !important;
+    width:61px !important;
+    height:61px !important;
+    flex:0 0 61px !important;
+    object-fit:contain !important;
+  }
+  #siteHeader .brand-divider {display:block !important;height:48px !important}
+  #siteHeader .brand-lockup {display:flex !important;flex-direction:column !important;min-width:0 !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(17px,5vw,22px) !important;line-height:1 !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup small {font-size:7px !important;letter-spacing:.12em !important;margin-top:4px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em {font-size:9px !important;margin-top:5px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em b {font-size:11px !important}
+  #siteHeader .luxury-actions {
+    position:static !important;
+    display:flex !important;
+    flex:0 0 auto !important;
+    align-items:center !important;
+    gap:7px !important;
+  }
+  #siteHeader .whatsapp-header {
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    min-width:0 !important;
+    height:34px !important;
+    padding:0 9px !important;
+    gap:4px !important;
+    border-radius:20px !important;
+    font-size:9px !important;
+    white-space:nowrap !important;
+  }
+  #siteHeader .menu-toggle {
+    display:inline-flex !important;
+    flex:0 0 36px !important;
+    width:36px !important;
+    height:36px !important;
+    align-items:center !important;
+    justify-content:center !important;
+    padding:0 !important;
+    border:1px solid rgba(235,194,89,.7) !important;
+    border-radius:8px !important;
+    color:#f6d77c !important;
+    background:rgba(255,255,255,.05) !important;
+    font-size:21px !important;
+  }
+  #siteHeader .luxury-nav {
+    display:none !important;
+    position:absolute !important;
+    z-index:300 !important;
+    top:100% !important;
+    left:10px !important;
+    right:10px !important;
+    width:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    padding:10px !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    justify-content:flex-start !important;
+    gap:4px !important;
+    border:1px solid rgba(224,185,79,.48) !important;
+    border-radius:10px !important;
+    background:linear-gradient(145deg,#260932,#16031f) !important;
+    box-shadow:0 16px 35px rgba(0,0,0,.48) !important;
+  }
+  #siteHeader .luxury-nav.open {display:flex !important}
+  #siteHeader .luxury-nav .nav-link,
+  #siteHeader .luxury-nav .nav-dropdown-head .nav-link {
+    display:flex !important;
+    width:100% !important;
+    min-height:40px !important;
+    height:auto !important;
+    justify-content:flex-start !important;
+    padding:9px 12px !important;
+    color:#f4eaf5 !important;
+    font-size:13px !important;
+    text-decoration:none !important;
+    background:transparent !important;
+    border:1px solid transparent !important;
+    box-shadow:none !important;
+  }
+  #siteHeader .luxury-nav .nav-link.active {
+    color:#28102f !important;
+    background:linear-gradient(110deg,#ffe58a,#dca52e) !important;
+  }
+  #siteHeader .luxury-nav .nav-dropdown {display:block !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .nav-dropdown-head {display:flex !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .dropdown-panel {position:static !important;display:none !important;width:100% !important;min-width:0 !important;transform:none !important}
+  #siteHeader .luxury-nav .nav-dropdown.dropdown-open .dropdown-panel,
+  #siteHeader .luxury-nav .nav-dropdown:focus-within .dropdown-panel {display:block !important}
+  .rabatask-hero {
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    border-radius:0 !important;
+  }
+  .rabatask-hero::before {
+    content:"" !important;
+    display:block !important;
+    position:absolute !important;
+    z-index:15 !important;
+    left:0 !important;
+    top:0 !important;
+    width:100% !important;
+    height:17.5% !important;
+    background:linear-gradient(105deg,rgba(32,5,43,.99),rgba(38,5,49,.98) 58%,rgba(31,4,43,.99)) !important;
+    pointer-events:none !important;
+  }
+  .rabatask-hero .image-nav-hotspot {display:none !important}
+}
