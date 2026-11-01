@@ -251,7 +251,7 @@ section[id]{scroll-margin-top:105px}
  .nav a{display:block;color:#fff!important;padding:13px 4px!important;font-size:14px;border-bottom:1px solid rgba(255,255,255,.09)}
  .nav a:last-child{border-bottom:0}
  .hero-banner{width:100%;height:auto!important;min-height:0!important;aspect-ratio:auto;overflow:hidden;padding:0!important;background:#1b0627}
- .hero-banner-image{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center top}
+ .hero-banner-image{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;background:#1b0627}
  .hero-hotspot{display:none!important}
  .mobile-hero-actions{display:flex;flex-direction:column;gap:10px;padding:17px 6% 20px;background:linear-gradient(135deg,#1b0628,#35113f)}
  .mobile-hero-actions .btn{width:100%;min-height:48px;padding:13px 15px;font-size:13px;text-align:center}
