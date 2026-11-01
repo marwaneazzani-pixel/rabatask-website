@@ -1044,8 +1044,8 @@ section[id]{scroll-margin-top:105px}
   display:block !important;
   position:absolute !important;
   z-index:10 !important;
-  height:9.8% !important;
-  top:79.4% !important;
+  height:7.2% !important;
+  top:64.2% !important;
   border:0 !important;
   border-radius:999px !important;
   background:transparent !important;
@@ -1068,7 +1068,7 @@ section[id]{scroll-margin-top:105px}
     padding:0 !important;
   }
   .rabatask-hero .hero-hotspot {
-    top:79.4% !important;
-    height:9.8% !important;
+    top:64.2% !important;
+    height:7.2% !important;
   }
 }
