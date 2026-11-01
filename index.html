@@ -15,22 +15,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topline"><span data-fr="Rabat · Salé · Témara" data-ar="الرباط · سلا · تمارة">Rabat · Salé · Témara</span><a href="https://wa.me/212707927275" target="_blank" rel="noopener">WhatsApp : 070 792 7275</a></div>
-  <header class="header">
-    <a class="brand" href="#home" aria-label="RABATASK accueil">
-      <img class="brand-logo-img" src="/rabatask-logo.webp" alt="RABATASK Professional Services">
+  <header class="header luxury-header" id="siteHeader">
+    <a class="brand luxury-brand" href="#home" aria-label="RABATASK — Accueil">
+      <span class="brand-emblem" aria-hidden="true"><span>R</span><i>T</i></span>
+      <span class="brand-copy">
+        <strong>RABA<span>TASK</span></strong>
+        <small>PROFESSIONAL SERVICES</small>
+        <em><b>⌖</b> Rabat · Salé · Témara</em>
+      </span>
     </a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
-      <a href="#services" data-fr="Nos services" data-ar="خدماتنا">Nos services</a>
-      <a href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
-      <a href="#promise" data-fr="Pourquoi nous" data-ar="لماذا نحن">Pourquoi nous</a>
-      <a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+    <nav class="nav luxury-nav" id="mainNav" aria-label="Navigation principale">
+      <a class="nav-link active" href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+      <div class="nav-dropdown" id="servicesDropdown">
+        <div class="nav-dropdown-head">
+          <a class="nav-link" href="#services" data-fr="Nos services" data-ar="خدماتنا">Nos services</a>
+          <button class="dropdown-toggle" id="servicesMenuToggle" type="button" aria-label="Afficher les services" aria-expanded="false">⌄</button>
+        </div>
+        <div class="dropdown-panel">
+          <a href="#service-restaurant"><span>✧</span><span data-fr="Nettoyage professionnel" data-ar="التنظيف المهني">Nettoyage professionnel</span></a>
+          <a href="#service-equipment"><span>✧</span><span data-fr="Équipements CHR" data-ar="معدات المطاعم والفنادق">Équipements CHR</span></a>
+          <a href="#service-events"><span>✧</span><span data-fr="Événementiel" data-ar="تنظيم الفعاليات">Événementiel</span></a>
+          <a href="#service-office"><span>✧</span><span data-fr="Entreprises & bureaux" data-ar="الشركات والمكاتب">Entreprises & bureaux</span></a>
+          <a href="#service-villa"><span>✧</span><span data-fr="Particuliers (villas / appartements)" data-ar="الأفراد (فيلات / شقق)">Particuliers (villas / appartements)</span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
+      <a class="nav-link" href="#promise" data-fr="Pourquoi nous" data-ar="لماذا نحن">Pourquoi nous</a>
+      <a class="nav-link" href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
     </nav>
-    <div class="header-actions">
+    <div class="header-actions luxury-actions">
       <button class="lang" id="langToggle" type="button">العربية</button>
-      <a class="btn btn-small" href="#contact" data-fr="Demander un devis" data-ar="طلب عرض سعر">Demander un devis</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+      <a class="whatsapp-header" href="https://wa.me/212707927275" target="_blank" rel="noopener"><span>◉</span> 070 792 7275</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
@@ -59,12 +75,12 @@
         <p data-fr="Des services complémentaires réunis sous une même signature de qualité." data-ar="خدمات متكاملة تجمعها معايير جودة واحدة.">Des services complémentaires réunis sous une même signature de qualité.</p>
       </div>
       <div class="service-grid service-grid-six">
-        <article class="service-card"><div class="service-visual photo-restaurant"><span class="visual-number">01</span><span class="visual-caption">RESTAURANTS & CAFÉS</span></div><div class="service-content"><div class="service-tag">HYGIÈNE PROFESSIONNELLE</div><h3>Nettoyage restaurants & cuisines</h3><p>Nettoyage des cuisines professionnelles, sols, surfaces, zones de préparation et espaces de restauration.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
-        <article class="service-card"><div class="service-visual photo-office"><span class="visual-number">02</span><span class="visual-caption">BUREAUX & ESPACES PRO</span></div><div class="service-content"><div class="service-tag">ENTRETIEN RÉGULIER</div><h3>Nettoyage des bureaux</h3><p>Entretien des espaces de travail, salles de réunion, sanitaires, sols et surfaces de contact.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
-        <article class="service-card"><div class="service-visual photo-villa"><span class="visual-number">03</span><span class="visual-caption">VILLAS & RÉSIDENCES</span></div><div class="service-content"><div class="service-tag">PROPRETÉ & CONFORT</div><h3>Nettoyage villas & résidences</h3><p>Nettoyage complet et entretien ponctuel ou régulier des maisons, appartements et résidences.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
-        <article class="service-card"><div class="service-visual photo-post"><span class="visual-number">04</span><span class="visual-caption">APRÈS TRAVAUX</span></div><div class="service-content"><div class="service-tag">REMISE EN ÉTAT</div><h3>Nettoyage après travaux</h3><p>Élimination des poussières et résidus après chantier pour préparer vos locaux à leur utilisation.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
-        <article class="service-card"><div class="service-visual photo-disinfect"><span class="visual-number">05</span><span class="visual-caption">DÉSINFECTION & HYGIÈNE</span></div><div class="service-content"><div class="service-tag">HYGIÈNE & PRÉVENTION</div><h3>Désinfection & hygiène</h3><p>Traitement ciblé des surfaces et points de contact avec des produits adaptés et des protocoles professionnels.</p><a class="text-link" href="#contact">Parler à notre équipe ↗</a></div></article>
-        <article class="service-card"><div class="service-visual photo-equipment"><span class="visual-number">06</span><span class="visual-caption">MATÉRIEL PROFESSIONNEL</span></div><div class="service-content"><div class="service-tag">ÉQUIPEMENT & FOURNITURES</div><h3>Matériel & produits d’hygiène</h3><p>Solutions et équipements de nettoyage pour restaurants, cafés, bureaux et professionnels.</p><a class="text-link" href="#contact">Demander le catalogue ↗</a></div></article>
+        <article class="service-card" id="service-restaurant"><div class="service-visual photo-restaurant"><span class="visual-number">01</span><span class="visual-caption">RESTAURANTS & CAFÉS</span></div><div class="service-content"><div class="service-tag">HYGIÈNE PROFESSIONNELLE</div><h3>Nettoyage restaurants & cuisines</h3><p>Nettoyage des cuisines professionnelles, sols, surfaces, zones de préparation et espaces de restauration.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
+        <article class="service-card" id="service-office"><div class="service-visual photo-office"><span class="visual-number">02</span><span class="visual-caption">BUREAUX & ESPACES PRO</span></div><div class="service-content"><div class="service-tag">ENTRETIEN RÉGULIER</div><h3>Nettoyage des bureaux</h3><p>Entretien des espaces de travail, salles de réunion, sanitaires, sols et surfaces de contact.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
+        <article class="service-card" id="service-villa"><div class="service-visual photo-villa"><span class="visual-number">03</span><span class="visual-caption">VILLAS & RÉSIDENCES</span></div><div class="service-content"><div class="service-tag">PROPRETÉ & CONFORT</div><h3>Nettoyage villas & résidences</h3><p>Nettoyage complet et entretien ponctuel ou régulier des maisons, appartements et résidences.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
+        <article class="service-card" id="service-post"><div class="service-visual photo-post"><span class="visual-number">04</span><span class="visual-caption">APRÈS TRAVAUX</span></div><div class="service-content"><div class="service-tag">REMISE EN ÉTAT</div><h3>Nettoyage après travaux</h3><p>Élimination des poussières et résidus après chantier pour préparer vos locaux à leur utilisation.</p><a class="text-link" href="#contact">Demander une prestation ↗</a></div></article>
+        <article class="service-card" id="service-disinfect"><div class="service-visual photo-disinfect"><span class="visual-number">05</span><span class="visual-caption">DÉSINFECTION & HYGIÈNE</span></div><div class="service-content"><div class="service-tag">HYGIÈNE & PRÉVENTION</div><h3>Désinfection & hygiène</h3><p>Traitement ciblé des surfaces et points de contact avec des produits adaptés et des protocoles professionnels.</p><a class="text-link" href="#contact">Parler à notre équipe ↗</a></div></article>
+        <article class="service-card" id="service-equipment"><div class="service-visual photo-equipment"><span class="visual-number">06</span><span class="visual-caption">MATÉRIEL PROFESSIONNEL</span></div><div class="service-content"><div class="service-tag">ÉQUIPEMENT & FOURNITURES</div><h3>Matériel & produits d’hygiène</h3><p>Solutions et équipements de nettoyage pour restaurants, cafés, bureaux et professionnels.</p><a class="text-link" href="#contact">Demander le catalogue ↗</a></div></article>
       </div>    </section>
 
     <section class="promise" id="promise">
