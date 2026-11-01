@@ -1403,3 +1403,110 @@ section[id]{scroll-margin-top:105px}
   }
   .rabatask-hero .nav-phone {font-size:clamp(6px,1.4vw,9px) !important}
 }
+
+
+/* Clean up duplicate baked-in menu lettering, then render one crisp transparent nav */
+.rabatask-hero::before {
+  content:"";
+  display:block !important;
+  position:absolute !important;
+  z-index:15 !important;
+  left:37.5% !important;
+  top:0 !important;
+  width:62.5% !important;
+  height:17.5% !important;
+  background:linear-gradient(105deg,rgba(32,5,43,.99),rgba(38,5,49,.98) 58%,rgba(31,4,43,.99)) !important;
+  pointer-events:none !important;
+}
+.rabatask-hero .image-nav-hotspot {
+  z-index:18 !important;
+  height:8.8% !important;
+  top:5.5% !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:0 3px !important;
+  color:#f7e8c5 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  font-family:"DM Sans",sans-serif !important;
+  font-size:clamp(10px,.82vw,13px) !important;
+  font-weight:600 !important;
+  letter-spacing:.015em !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.4) !important;
+  transform:none !important;
+  transition:color .25s ease,text-shadow .25s ease !important;
+}
+.rabatask-hero .image-nav-hotspot span {
+  display:inline-block !important;
+  position:relative !important;
+  transform:translateY(0) !important;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),letter-spacing .3s ease !important;
+}
+.rabatask-hero .image-nav-hotspot span::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  right:50%;
+  bottom:-8px;
+  height:2px;
+  border-radius:2px;
+  background:linear-gradient(90deg,transparent,#f4d078,transparent);
+  box-shadow:0 0 9px rgba(244,208,120,.55);
+  transition:left .28s ease,right .28s ease;
+}
+.rabatask-hero .image-nav-hotspot::after {
+  content:"";
+  display:none !important;
+}
+.rabatask-hero .image-nav-hotspot:hover,
+.rabatask-hero .image-nav-hotspot:focus-visible {
+  color:#ffe29a !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none !important;
+  outline:none !important;
+  text-shadow:0 0 12px rgba(244,208,120,.65) !important;
+}
+.rabatask-hero .image-nav-hotspot:hover span,
+.rabatask-hero .image-nav-hotspot:focus-visible span {
+  transform:translateY(-4px) !important;
+  letter-spacing:.055em !important;
+}
+.rabatask-hero .image-nav-hotspot:hover span::after,
+.rabatask-hero .image-nav-hotspot:focus-visible span::after {
+  left:-5px;
+  right:-5px;
+}
+.rabatask-hero .nav-home {left:39.3% !important;width:5.5% !important}
+.rabatask-hero .nav-services {left:46.0% !important;width:8.5% !important}
+.rabatask-hero .nav-about {left:57.1% !important;width:5.8% !important}
+.rabatask-hero .nav-why {left:64.5% !important;width:8.6% !important}
+.rabatask-hero .nav-contact {left:75.1% !important;width:5.3% !important}
+.rabatask-hero .nav-phone {
+  left:83.0% !important;
+  width:13.3% !important;
+  height:10% !important;
+  top:3.5% !important;
+  color:#ffe4a0 !important;
+  font-size:clamp(10px,.88vw,14px) !important;
+  font-weight:700 !important;
+  text-shadow:0 1px 7px rgba(0,0,0,.25) !important;
+}
+.rabatask-hero .nav-phone span::after {display:none !important}
+.rabatask-hero .nav-phone:hover {
+  color:#fff2c7 !important;
+  text-shadow:0 0 14px rgba(255,222,142,.75) !important;
+}
+@media(max-width:760px) {
+  .rabatask-hero::before {left:0 !important;width:100% !important;height:18% !important}
+  .rabatask-hero .image-nav-hotspot {
+    top:5% !important;
+    font-size:clamp(6px,1.25vw,9px) !important;
+  }
+  .rabatask-hero .nav-phone {top:3% !important;font-size:clamp(6px,1.35vw,10px) !important}
+}
