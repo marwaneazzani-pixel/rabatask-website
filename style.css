@@ -1998,3 +1998,60 @@ section[id]{scroll-margin-top:105px}
     height:12% !important;
   }
 }
+
+
+/* MOBILE FINAL REPAIR — desktop untouched; use the official logo/header and keep all hero actions usable */
+@media (max-width:760px) {
+  /* Real site header: official logo asset, readable lockup, working menu and WhatsApp */
+  #siteHeader {
+    display:flex !important;
+    position:relative !important;
+    z-index:200 !important;
+    width:100% !important;
+    height:76px !important;
+    min-height:76px !important;
+    padding:6px 9px !important;
+    margin:0 !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:6px !important;
+    overflow:visible !important;
+    background:linear-gradient(110deg,#190323,#2a0735 70%,#21052d) !important;
+    border-bottom:1px solid rgba(225,184,77,.6) !important;
+  }
+  #siteHeader .luxury-brand {display:flex !important;flex:1 1 auto !important;min-width:0 !important;max-width:none !important;gap:6px !important;align-items:center !important}
+  #siteHeader .brand-logo-exact {display:block !important;width:58px !important;height:58px !important;flex:0 0 58px !important;object-fit:contain !important}
+  #siteHeader .brand-divider {display:block !important;height:44px !important}
+  #siteHeader .brand-lockup {display:flex !important;flex-direction:column !important;min-width:0 !important}
+  #siteHeader .brand-lockup strong {font-size:clamp(16px,4.6vw,21px) !important;line-height:1 !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup small {font-size:6.5px !important;letter-spacing:.09em !important;margin-top:4px !important;white-space:nowrap !important}
+  #siteHeader .brand-lockup em {font-size:8px !important;margin-top:4px !important;white-space:nowrap !important}
+  #siteHeader .luxury-actions {position:static !important;display:flex !important;flex:0 0 auto !important;align-items:center !important;gap:5px !important}
+  #siteHeader .whatsapp-header {display:inline-flex !important;min-width:0 !important;height:32px !important;padding:0 7px !important;gap:3px !important;border-radius:18px !important;font-size:8px !important;white-space:nowrap !important}
+  #siteHeader .menu-toggle {display:inline-flex !important;flex:0 0 34px !important;width:34px !important;height:34px !important;align-items:center !important;justify-content:center !important;border:1px solid rgba(235,194,89,.7) !important;border-radius:8px !important;color:#f6d77c !important;background:rgba(255,255,255,.05) !important;font-size:20px !important}
+  #siteHeader .luxury-nav {display:none !important;position:absolute !important;z-index:300 !important;top:calc(100% + 1px) !important;left:8px !important;right:8px !important;width:auto !important;height:auto !important;min-height:0 !important;padding:10px !important;flex-direction:column !important;align-items:stretch !important;gap:4px !important;border:1px solid rgba(224,185,79,.48) !important;border-radius:10px !important;background:linear-gradient(145deg,#260932,#16031f) !important;box-shadow:0 16px 35px rgba(0,0,0,.48) !important}
+  #siteHeader .luxury-nav.open {display:flex !important}
+  #siteHeader .luxury-nav .nav-link,#siteHeader .luxury-nav .nav-dropdown-head .nav-link {display:flex !important;width:100% !important;min-height:42px !important;height:auto !important;justify-content:flex-start !important;padding:10px 12px !important;color:#f4eaf5 !important;font-size:14px !important;text-decoration:none !important;background:transparent !important;border:1px solid transparent !important;box-shadow:none !important}
+  #siteHeader .luxury-nav .nav-link.active {color:#28102f !important;background:linear-gradient(110deg,#ffe58a,#dca52e) !important}
+  #siteHeader .luxury-nav .nav-dropdown {display:block !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .nav-dropdown-head {display:flex !important;width:100% !important;height:auto !important}
+  #siteHeader .luxury-nav .dropdown-panel {position:static !important;display:none !important;width:100% !important;min-width:0 !important;transform:none !important}
+  #siteHeader .luxury-nav .nav-dropdown.dropdown-open .dropdown-panel,#siteHeader .luxury-nav .nav-dropdown:focus-within .dropdown-panel {display:block !important}
+
+  /* Keep the full original desktop artwork proportional; do not crop or distort it. */
+  .rabatask-hero {display:block !important;position:relative !important;width:100% !important;max-width:none !important;height:auto !important;min-height:0 !important;aspect-ratio:1866 / 843 !important;margin:0 !important;padding:0 !important;overflow:hidden !important;border-radius:0 !important}
+  .rabatask-hero .rabatask-hero-art {position:absolute !important;inset:0 !important;display:block !important;width:100% !important;height:100% !important;object-fit:fill !important;object-position:center !important}
+  /* The artwork's embedded desktop nav is hidden; the real header above replaces it. */
+  .rabatask-hero .image-nav-hotspot,.rabatask-hero .hero-language-switch {display:none !important}
+  .rabatask-hero::before {display:none !important;content:none !important}
+  /* Dedicated, larger mobile CTAs retain the same destinations and wording. */
+  .rabatask-hero .rabatask-hero-mobile {display:block !important;position:relative !important;z-index:5 !important;padding:18px 16px 22px !important;background:linear-gradient(145deg,#21052d,#310b40) !important;color:#fff !important;text-align:left !important}
+  .rabatask-hero .rabatask-hero-mobile p {font-size:10px !important;letter-spacing:.12em !important;color:#f0ce73 !important;margin:0 0 9px !important}
+  .rabatask-hero .rabatask-hero-mobile h1 {font-size:clamp(22px,6vw,30px) !important;line-height:1.12 !important;margin:0 0 10px !important}
+  .rabatask-hero .rabatask-hero-mobile h1 strong {color:#edc65f !important}
+  .rabatask-hero .rabatask-hero-mobile>span {display:block !important;font-size:13px !important;line-height:1.5 !important;color:#eee4f1 !important}
+  .rabatask-hero .rabatask-hero-mobile-actions {display:flex !important;flex-wrap:wrap !important;gap:9px !important;margin-top:16px !important}
+  .rabatask-hero .rabatask-hero-mobile-actions a {display:inline-flex !important;align-items:center !important;justify-content:center !important;min-height:43px !important;padding:0 15px !important;border:1px solid #e4b94e !important;border-radius:24px !important;color:#f8e8bd !important;text-decoration:none !important;font-size:12px !important;font-weight:700 !important}
+  .rabatask-hero .rabatask-hero-mobile-actions a:first-child {background:linear-gradient(110deg,#ffe18a,#dca52e) !important;color:#260b31 !important}
+  .rabatask-hero .hero-hotspot-services,.rabatask-hero .hero-hotspot-whatsapp {display:none !important}
+}
