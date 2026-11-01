@@ -1072,3 +1072,42 @@ section[id]{scroll-margin-top:105px}
     height:7.2% !important;
   }
 }
+
+
+/* Clickable controls aligned over the navigation and contact details in the user's artwork */
+.rabatask-hero {
+  width:96% !important;
+  max-width:1600px !important;
+  margin:16px auto 0 !important;
+  aspect-ratio:1866 / 843 !important;
+  border-radius:8px !important;
+  box-shadow:0 14px 42px rgba(0,0,0,.28) !important;
+}
+.rabatask-hero .rabatask-hero-art {
+  object-fit:fill !important;
+}
+.rabatask-hero .image-nav-hotspot {
+  position:absolute;
+  z-index:12;
+  display:block;
+  background:transparent;
+  border:0;
+  border-radius:8px;
+  cursor:pointer;
+  text-decoration:none;
+}
+.rabatask-hero .nav-home {left:39.3%;top:6.2%;width:4.7%;height:8.4%}
+.rabatask-hero .nav-services {left:46.1%;top:6.2%;width:8.7%;height:8.4%}
+.rabatask-hero .nav-about {left:57.1%;top:6.2%;width:5.3%;height:8.4%}
+.rabatask-hero .nav-why {left:64.5%;top:6.2%;width:8.5%;height:8.4%}
+.rabatask-hero .nav-contact {left:75.1%;top:6.2%;width:5.1%;height:8.4%}
+.rabatask-hero .nav-phone {left:83.2%;top:5.8%;width:13.1%;height:9.4%;border-radius:40px}
+.rabatask-hero .hero-hotspot-services {left:28.2% !important;top:77.7% !important;width:21.1% !important;height:9% !important}
+.rabatask-hero .hero-hotspot-whatsapp {left:50.8% !important;top:77.7% !important;width:20.8% !important;height:9% !important}
+@media(max-width:760px) {
+  .rabatask-hero {width:100% !important;margin:0 auto !important;border-radius:0 !important;max-width:none !important}
+  .rabatask-hero .image-nav-hotspot {height:9%}
+  .rabatask-hero .nav-phone {height:10%}
+  .rabatask-hero .hero-hotspot-services {top:77.7% !important}
+  .rabatask-hero .hero-hotspot-whatsapp {top:77.7% !important}
+}
