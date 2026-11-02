@@ -15,33 +15,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header luxury-header" id="siteHeader">
-    <a class="brand luxury-brand" href="#home" aria-label="RABATASK — Accueil">
-      <img class="brand-logo-exact" src="/rabatask-logo.webp" alt="RABATASK — RT, Professional Services">
-      <span class="brand-location"><b aria-hidden="true">⌖</b> Rabat · Salé · Témara</span>
-    </a>
-    <nav class="nav luxury-nav" id="mainNav" aria-label="Navigation principale">
-      <a class="nav-link active" href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
-      <div class="nav-dropdown" id="servicesDropdown">
-        <div class="nav-dropdown-head">
-          <a class="nav-link" href="#services" data-fr="Nos services" data-ar="خدماتنا">Nos services</a>
-          <button class="dropdown-toggle" id="servicesMenuToggle" type="button" aria-label="Afficher les services" aria-expanded="false">⌄</button>
-        </div>
-        <div class="dropdown-panel">
-          <a href="#service-restaurant"><span>♧</span><span data-fr="Nettoyage professionnel" data-ar="التنظيف المهني">Nettoyage professionnel</span></a>
-          <a href="#service-equipment"><span>♨</span><span data-fr="Équipements CHR" data-ar="معدات المطاعم والفنادق">Équipements CHR</span></a>
-          <a href="#contact"><span>▦</span><span data-fr="Événementiel" data-ar="تنظيم الفعاليات">Événementiel</span></a>
-          <a href="#service-office"><span>▥</span><span data-fr="Entreprises & bureaux" data-ar="الشركات والمكاتب">Entreprises & bureaux</span></a>
-          <a href="#service-villa"><span>⌂</span><span data-fr="Particuliers (Villas / Appartements)" data-ar="الأفراد (فيلات / شقق)">Particuliers (Villas / Appartements)</span></a>
+  <header class="rabatask-image-header" id="siteHeader">
+    <img class="header-art-desktop" src="/rabatask-header-banner.webp" alt="RABATASK — Professional Services" fetchpriority="high">
+    <a class="header-logo-link" href="#home" aria-label="RABATASK — Accueil"></a>
+    <nav class="image-header-nav" aria-label="Navigation principale">
+      <a class="header-hotspot hotspot-home" href="#home" aria-label="Accueil"></a>
+      <div class="header-services-wrap">
+        <a class="header-hotspot hotspot-services" href="#services" aria-label="Nos services"></a>
+        <button class="header-services-toggle" id="servicesMenuToggle" type="button" aria-label="Afficher le menu des services" aria-expanded="false"></button>
+        <div class="header-services-panel" id="headerServicesPanel">
+          <a href="#service-restaurant">Nettoyage professionnel</a>
+          <a href="#service-equipment">Matériel & équipements</a>
+          <a href="#contact">Événementiel & location</a>
+          <a href="#service-office">Bureaux & entreprises</a>
+          <a href="#service-villa">Villas & résidences</a>
         </div>
       </div>
-      <a class="nav-link" href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
-      <a class="nav-link" href="#promise" data-fr="Pourquoi nous" data-ar="لماذا نحن">Pourquoi nous</a>
-      <a class="nav-link" href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+      <a class="header-hotspot hotspot-about" href="#about" aria-label="À propos"></a>
+      <a class="header-hotspot hotspot-work" href="#promise" aria-label="Nos réalisations"></a>
+      <a class="header-hotspot hotspot-contact" href="#contact" aria-label="Contact"></a>
+      <a class="header-hotspot hotspot-phone" href="tel:+212707927275" aria-label="Appeler RABATASK"></a>
+      <a class="header-hotspot hotspot-whatsapp" href="https://wa.me/212707927275" target="_blank" rel="noopener" aria-label="WhatsApp RABATASK"></a>
+      <a class="header-hotspot hotspot-quote" href="#contact" aria-label="Demande de devis"></a>
     </nav>
-    <div class="header-actions luxury-actions">
-      <a class="whatsapp-header" href="https://wa.me/212707927275" target="_blank" rel="noopener" aria-label="Contacter RABATASK sur WhatsApp"><span class="header-wa-icon" aria-hidden="true">◉</span><span class="header-wa-number">070 792 7275</span></a>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <div class="mobile-header-controls">
+      <button class="mobile-menu-button" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="mobile-header-menu" id="mainNav" aria-label="Menu mobile">
+        <a href="#home">Accueil</a>
+        <button type="button" class="mobile-services-toggle" id="mobileServicesToggle" aria-expanded="false">Nos services <span>⌄</span></button>
+        <div class="mobile-services-panel" id="mobileServicesPanel">
+          <a href="#service-restaurant">Nettoyage professionnel</a>
+          <a href="#service-equipment">Matériel & équipements</a>
+          <a href="#contact">Événementiel & location</a>
+          <a href="#service-office">Bureaux & entreprises</a>
+          <a href="#service-villa">Villas & résidences</a>
+        </div>
+        <a href="#about">À propos</a>
+        <a href="#promise">Réalisations</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+212707927275">Appeler : 070 792 7275</a>
+        <a href="https://wa.me/212707927275" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="mobile-quote-link" href="#contact">Demande de devis</a>
+      </nav>
     </div>
   </header>
 
