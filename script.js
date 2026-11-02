@@ -15,65 +15,55 @@ if(toggle) toggle.addEventListener('click',()=>setLanguage(currentLang==='fr'?'a
 
 const menuButton=document.getElementById('menuToggle');
 const nav=document.getElementById('mainNav');
-const dropdown=document.getElementById('servicesDropdown');
-const dropdownButton=document.getElementById('servicesMenuToggle');
+const mobileServicesButton=document.getElementById('mobileServicesToggle');
+const mobileServicesPanel=document.getElementById('mobileServicesPanel');
+const desktopServicesButton=document.getElementById('servicesMenuToggle');
+const desktopServicesPanel=document.getElementById('headerServicesPanel');
 
 function closeMobileMenu(){
-  if(nav) nav.classList.remove('open');
-  if(menuButton){
-    menuButton.setAttribute('aria-expanded','false');
-    menuButton.setAttribute('aria-label','Ouvrir le menu');
-    menuButton.textContent='☰';
-  }
+  nav?.classList.remove('open');
+  menuButton?.setAttribute('aria-expanded','false');
+  menuButton?.setAttribute('aria-label','Ouvrir le menu');
+  mobileServicesPanel?.classList.remove('open');
+  mobileServicesButton?.setAttribute('aria-expanded','false');
 }
-if(menuButton && nav){
-  menuButton.addEventListener('click',()=>{
-    const opened=nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded',String(opened));
-    menuButton.setAttribute('aria-label',opened?'Fermer le menu':'Ouvrir le menu');
-    menuButton.textContent=opened?'×':'☰';
-    if(!opened && dropdown){
-      dropdown.classList.remove('dropdown-open');
-      dropdownButton?.setAttribute('aria-expanded','false');
-    }
-  });
-}
-if(dropdown && dropdownButton){
-  dropdownButton.addEventListener('click',event=>{
-    event.preventDefault();
-    event.stopPropagation();
-    const opened=dropdown.classList.toggle('dropdown-open');
-    dropdownButton.setAttribute('aria-expanded',String(opened));
-  });
-}
-document.querySelectorAll('#mainNav a[href^="#"]').forEach(link=>{
+menuButton?.addEventListener('click',()=>{
+  const opened=nav?.classList.toggle('open')||false;
+  menuButton.setAttribute('aria-expanded',String(opened));
+  menuButton.setAttribute('aria-label',opened?'Fermer le menu':'Ouvrir le menu');
+});
+mobileServicesButton?.addEventListener('click',()=>{
+  const opened=mobileServicesPanel?.classList.toggle('open')||false;
+  mobileServicesButton.setAttribute('aria-expanded',String(opened));
+});
+desktopServicesButton?.addEventListener('click',event=>{
+  event.preventDefault();
+  const opened=desktopServicesPanel?.classList.toggle('open')||false;
+  desktopServicesButton.setAttribute('aria-expanded',String(opened));
+});
+document.querySelectorAll('#mainNav a[href^="#"],.header-services-panel a[href^="#"]').forEach(link=>{
   link.addEventListener('click',()=>{
-    const target=link.getAttribute('href');
-    if(target && target.length>1){
-      document.querySelectorAll('#mainNav .nav-link').forEach(item=>item.classList.remove('active'));
-      const parent=link.closest('.nav-dropdown');
-      if(parent) parent.querySelector('.nav-link')?.classList.add('active');
-      else if(link.classList.contains('nav-link')) link.classList.add('active');
-    }
     closeMobileMenu();
-    dropdown?.classList.remove('dropdown-open');
-    dropdownButton?.setAttribute('aria-expanded','false');
+    desktopServicesPanel?.classList.remove('open');
+    desktopServicesButton?.setAttribute('aria-expanded','false');
   });
 });
 document.addEventListener('click',event=>{
-  if(dropdown && !dropdown.contains(event.target)){
-    dropdown.classList.remove('dropdown-open');
-    dropdownButton?.setAttribute('aria-expanded','false');
+  if(desktopServicesPanel && !desktopServicesPanel.contains(event.target) && !desktopServicesButton?.contains(event.target)){
+    desktopServicesPanel.classList.remove('open');
+    desktopServicesButton?.setAttribute('aria-expanded','false');
   }
 });
 document.addEventListener('keydown',event=>{
   if(event.key==='Escape'){
     closeMobileMenu();
-    dropdown?.classList.remove('dropdown-open');
-    dropdownButton?.setAttribute('aria-expanded','false');
+    desktopServicesPanel?.classList.remove('open');
+    desktopServicesButton?.setAttribute('aria-expanded','false');
   }
 });
-
+window.addEventListener('resize',()=>{
+  if(window.innerWidth>900) closeMobileMenu();
+});
 const quoteForm=document.getElementById('quoteForm');
 if(quoteForm) quoteForm.addEventListener('submit',event=>{
   event.preventDefault();
