@@ -2431,3 +2431,117 @@ section[id]{scroll-margin-top:105px}
  .brand-logo-exact{width:57px;height:57px;flex-basis:57px}
  .brand-location{font-size:7px}
 }
+
+
+/* Exact supplied RABATASK header artwork with real clickable controls */
+.rabatask-image-header{
+  position:relative;
+  z-index:100;
+  width:100%;
+  height:clamp(150px,16.1133vw,330px);
+  min-height:150px;
+  overflow:visible;
+  background:#210020;
+  line-height:0;
+}
+.header-art-desktop{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:fill;
+}
+.header-logo-link{
+  position:absolute;
+  z-index:3;
+  left:7.8%;
+  top:2%;
+  width:16.5%;
+  height:94%;
+}
+.image-header-nav{position:absolute;inset:0;z-index:4}
+.header-hotspot{
+  position:absolute;
+  display:block;
+  top:34%;
+  height:29%;
+  border-radius:30px;
+  cursor:pointer;
+  outline-offset:3px;
+}
+.header-hotspot:focus-visible,.header-services-toggle:focus-visible{
+  outline:2px solid #ffe28a;
+}
+.hotspot-home{left:28.3%;width:6.4%}
+.header-services-wrap{position:absolute;left:36.2%;top:34%;width:10.5%;height:29%}
+.header-services-wrap .hotspot-services{position:absolute;inset:0;width:100%;height:100%}
+.header-services-toggle{
+  position:absolute;right:0;top:0;width:22%;height:100%;
+  border:0;background:transparent;cursor:pointer;color:transparent;
+}
+.header-services-panel{
+  display:none;position:absolute;top:calc(100% + 12px);left:0;
+  width:260px;padding:9px;border:1px solid #d8ad42;border-radius:10px;
+  background:linear-gradient(145deg,#320638,#19001d);
+  box-shadow:0 16px 38px #08000dcc;line-height:1.4;
+}
+.header-services-panel.open{display:block}
+.header-services-panel a{
+  display:block;padding:12px 13px;border-radius:6px;color:#fff;
+  font:500 13px "DM Sans",sans-serif;text-decoration:none;
+}
+.header-services-panel a:hover{background:#ffffff12;color:#f4cc62}
+.hotspot-about{left:48.2%;width:6.8%}
+.hotspot-work{left:56.6%;width:7.4%}
+.hotspot-contact{left:66.2%;width:5.6%}
+.hotspot-phone{left:73.1%;width:3.1%;border-radius:50%}
+.hotspot-whatsapp{left:77.4%;width:3.1%;border-radius:50%}
+.hotspot-quote{left:81.5%;width:14.1%;border-radius:40px}
+.mobile-header-controls{display:none}
+@media(max-width:900px){
+  .rabatask-image-header{height:94px;min-height:94px;overflow:hidden}
+  .header-art-desktop{
+    position:absolute;left:0;top:-3px;width:620px;height:100px;
+    max-width:none;object-fit:fill;
+  }
+  .rabatask-image-header:after{
+    content:"";position:absolute;z-index:1;top:0;right:0;bottom:0;width:calc(100% - 155px);
+    background:linear-gradient(90deg,rgba(33,0,32,0),#210020 35%,#210020 100%);
+    pointer-events:none;
+  }
+  .header-logo-link{left:5px;top:0;width:150px;height:94px;z-index:3}
+  .image-header-nav{display:none}
+  .mobile-header-controls{display:block;position:absolute;inset:0;z-index:5;pointer-events:none}
+  .mobile-menu-button{
+    pointer-events:auto;position:absolute;right:17px;top:25px;width:46px;height:44px;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;
+    border:1px solid #e8b943;border-radius:9px;background:#31052f;color:#ffd45c;cursor:pointer;
+  }
+  .mobile-menu-button span{display:block;width:21px;height:2px;border-radius:2px;background:#ffd45c}
+  .mobile-header-menu{
+    pointer-events:auto;display:none;position:absolute;top:94px;left:12px;right:12px;
+    padding:12px;border:1px solid #d9ad42;border-radius:12px;
+    background:linear-gradient(145deg,#300536,#17001e);
+    box-shadow:0 18px 40px #0009;line-height:1.4;
+  }
+  .mobile-header-menu.open{display:flex;flex-direction:column}
+  .mobile-header-menu>a,.mobile-services-toggle{
+    display:flex;align-items:center;justify-content:space-between;min-height:45px;
+    padding:10px 13px;border:0;border-bottom:1px solid #ffffff18;
+    background:transparent;color:#fff;text-decoration:none;
+    font:600 14px "DM Sans",sans-serif;text-align:left;cursor:pointer;
+  }
+  .mobile-services-toggle span{color:#f3c54e;font-size:20px}
+  .mobile-services-panel{display:none;padding:3px 8px 8px 15px}
+  .mobile-services-panel.open{display:block}
+  .mobile-services-panel a{display:block;padding:10px;color:#f2d98c;text-decoration:none;font:500 13px "DM Sans",sans-serif}
+  .mobile-header-menu .mobile-quote-link{
+    margin-top:9px;border:0;border-radius:30px;background:linear-gradient(110deg,#ffe17a,#d99c24);
+    color:#210020;justify-content:center;
+  }
+}
+@media(max-width:380px){
+  .rabatask-image-header{height:86px;min-height:86px}
+  .header-art-desktop{width:570px;height:92px}
+  .mobile-menu-button{right:12px;top:21px}
+  .mobile-header-menu{top:86px}
+}
