@@ -2553,25 +2553,3 @@ section[id]{scroll-margin-top:105px}
     box-shadow:0 0 0 1px rgba(237,193,74,.85),0 3px 12px rgba(0,0,0,.28);
   }
 }
-
-/* Mobile header language selector — matches the supplied gold/plum reference */
-@media(max-width:900px){
- .mobile-header-controls{gap:clamp(7px,2vw,16px)!important}
- .mobile-language-switch{pointer-events:auto;display:flex;align-items:center;gap:7px;white-space:nowrap}
- .mobile-language-switch button{border:0;background:transparent;padding:8px 2px;color:#f7e8f4;font:600 12px "Cairo","DM Sans",sans-serif;cursor:pointer}
- .mobile-language-switch button.is-active{color:#f2c957}
- .mobile-language-switch span{color:rgba(255,255,255,.55);font-size:12px}
- .mobile-header-whatsapp{flex:0 0 44px;width:44px;height:44px;padding:0;border-radius:50%;font-size:0}
- .mobile-header-whatsapp span{font-size:22px}
-}
-@media(max-width:430px){
- .mobile-header-controls{gap:7px!important}
- .mobile-language-switch{gap:4px}
- .mobile-language-switch button{font-size:11px;padding:7px 1px}
- .mobile-header-whatsapp{width:40px;height:40px;flex-basis:40px}
-}
-@media(max-width:370px){
- .mobile-language-switch{gap:2px}
- .mobile-language-switch button{font-size:10px}
- .mobile-header-whatsapp{width:37px;height:37px;flex-basis:37px}
-}

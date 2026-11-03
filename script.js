@@ -104,11 +104,11 @@ if(year) year.textContent=new Date().getFullYear();
 
 
 /* Small bilingual switch in the hero artwork header */
-document.querySelectorAll('.hero-language-switch [data-language],.mobile-language-switch [data-language]').forEach(button=>{
+document.querySelectorAll('.hero-language-switch [data-language]').forEach(button=>{
   button.addEventListener('click',()=>{
     const lang=button.dataset.language;
     if(typeof setLanguage==='function') setLanguage(lang);
-    document.querySelectorAll('.hero-language-switch [data-language],.mobile-language-switch [data-language]').forEach(item=>{
+    document.querySelectorAll('.hero-language-switch [data-language]').forEach(item=>{
       const active=item===button;
       item.classList.toggle('is-active',active);
       item.setAttribute('aria-pressed',String(active));
