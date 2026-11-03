@@ -2567,3 +2567,23 @@ section[id]{scroll-margin-top:105px}
   .header-logo-link{left:7px;top:7px;width:66px;height:66px}
   .mobile-header-controls{gap:13px!important}
 }
+
+/* Keep the mobile header controls identical in French and Arabic */
+@media(max-width:900px){
+  #siteHeader .mobile-header-controls{
+    direction:ltr!important;
+    flex-direction:row!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    gap:16px!important;
+  }
+  #siteHeader .mobile-header-whatsapp,
+  #siteHeader .mobile-menu-button{
+    flex:0 0 auto!important;
+    margin:0!important;
+  }
+  #siteHeader .mobile-menu-button{margin-left:2px!important}
+}
+@media(max-width:430px){
+  #siteHeader .mobile-header-controls{gap:13px!important}
+}
