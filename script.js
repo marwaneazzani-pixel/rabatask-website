@@ -116,3 +116,21 @@ document.querySelectorAll('.hero-language-switch [data-language]').forEach(butto
   });
 });
 
+
+/* Mobile language selector uses the same site-wide language switcher */
+document.querySelectorAll('[data-mobile-language]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const lang=button.dataset.mobileLanguage;
+    setLanguage(lang);
+    document.querySelectorAll('[data-mobile-language]').forEach(item=>{
+      const active=item.dataset.mobileLanguage===lang;
+      item.classList.toggle('is-active',active);
+      item.setAttribute('aria-pressed',String(active));
+    });
+    document.querySelectorAll('.language-choice').forEach(item=>{
+      const active=item.dataset.language===lang;
+      item.classList.toggle('is-active',active);
+      item.setAttribute('aria-pressed',String(active));
+    });
+  });
+});
