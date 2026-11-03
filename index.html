@@ -17,7 +17,7 @@
 <body>
   <header class="rabatask-image-header" id="siteHeader">
     <img class="header-art-desktop" src="/En-tête luxueux RABATASK en or et prune.png" alt="RABATASK — Professional Services" fetchpriority="high">
-    <a class="header-logo-link" href="#home" aria-label="RABATASK — Accueil"><img class="mobile-exact-logo" src="/rabatask-logo.webp" alt="Logo officiel RABATASK"></a>
+    <a class="header-logo-link" href="#home" aria-label="RABATASK — Accueil"><img class="mobile-exact-logo" src="/rabatask-logo.webp" alt="Logo officiel RABATASK — Professional Services"></a>
     <nav class="image-header-nav" aria-label="Navigation principale">
       <a class="header-hotspot hotspot-home" href="#home" aria-label="Accueil"></a>
       <div class="header-services-wrap">
@@ -39,11 +39,12 @@
       <a class="header-hotspot hotspot-quote" href="#contact" aria-label="Demande de devis"></a>
     </nav>
     <div class="mobile-header-controls">
+      <div class="mobile-language-switch" aria-label="Choisir la langue"><button type="button" data-language="fr" class="is-active" aria-pressed="true">FR</button><span aria-hidden="true">|</span><button type="button" data-language="ar" aria-pressed="false">العربية</button></div>
       <a class="mobile-header-whatsapp" href="https://wa.me/212707927275" target="_blank" rel="noopener" aria-label="Contacter RABATASK sur WhatsApp"><span aria-hidden="true">☏</span><b>WhatsApp</b></a>
       <button class="mobile-menu-button" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="mobile-header-menu" id="mainNav" aria-label="Menu mobile">
-        <a href="#home">Accueil</a>
-        <button type="button" class="mobile-services-toggle" id="mobileServicesToggle" aria-expanded="false">Nos services <span>⌄</span></button>
+        <a href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+        <button type="button" class="mobile-services-toggle" id="mobileServicesToggle" aria-expanded="false"><span data-fr="Nos services" data-ar="خدماتنا">Nos services</span><span aria-hidden="true">⌄</span></button>
         <div class="mobile-services-panel" id="mobileServicesPanel">
           <a href="#service-restaurant">Nettoyage professionnel</a>
           <a href="#service-equipment">Matériel & équipements</a>
@@ -51,12 +52,12 @@
           <a href="#service-office">Bureaux & entreprises</a>
           <a href="#service-villa">Villas & résidences</a>
         </div>
-        <a href="#about">À propos</a>
-        <a href="#promise">Réalisations</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:+212707927275">Appeler : 070 792 7275</a>
-        <a href="https://wa.me/212707927275" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="mobile-quote-link" href="#contact">Demande de devis</a>
+        <a href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
+        <a href="#promise" data-fr="Réalisations" data-ar="إنجازاتنا">Réalisations</a>
+        <a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+        <a href="tel:+212707927275" data-fr="Appeler : 070 792 7275" data-ar="اتصل بنا: 070 792 7275">Appeler : 070 792 7275</a>
+        <a href="https://wa.me/212707927275" target="_blank" rel="noopener" data-fr="WhatsApp" data-ar="واتساب">WhatsApp</a>
+        <a class="mobile-quote-link" href="#contact" data-fr="Demande de devis" data-ar="طلب عرض سعر">Demande de devis</a>
       </nav>
     </div>
   </header>
