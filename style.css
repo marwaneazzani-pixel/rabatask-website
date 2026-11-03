@@ -2638,11 +2638,11 @@ section[id]{scroll-margin-top:105px}
     min-width:0!important;
   }
   #siteHeader .mobile-language-switch{
-    display:flex!important;align-items:center;justify-content:center;gap:7px;
+    pointer-events:auto!important;display:flex!important;align-items:center;justify-content:center;gap:7px;
     height:42px;white-space:nowrap;direction:ltr!important;
   }
   #siteHeader .mobile-language-choice{
-    border:0;background:transparent;padding:5px 2px;
+    pointer-events:auto!important;border:0;background:transparent;padding:5px 2px;
     color:#f4e8d0;font:600 12px "DM Sans","Cairo",sans-serif;
     cursor:pointer;opacity:.78;
   }
