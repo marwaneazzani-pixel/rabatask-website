@@ -2625,3 +2625,41 @@ section[id]{scroll-margin-top:105px}
     justify-self:end!important;
   }
 }
+
+/* Mobile language selector + modern WhatsApp mark */
+@media(max-width:900px){
+  #siteHeader .mobile-header-controls{
+    display:grid!important;
+    grid-template-columns:auto 44px 44px!important;
+    column-gap:12px!important;
+    align-items:center!important;
+    direction:ltr!important;
+    width:max-content!important;
+    min-width:0!important;
+  }
+  #siteHeader .mobile-language-switch{
+    display:flex!important;align-items:center;justify-content:center;gap:7px;
+    height:42px;white-space:nowrap;direction:ltr!important;
+  }
+  #siteHeader .mobile-language-choice{
+    border:0;background:transparent;padding:5px 2px;
+    color:#f4e8d0;font:600 12px "DM Sans","Cairo",sans-serif;
+    cursor:pointer;opacity:.78;
+  }
+  #siteHeader .mobile-language-choice.is-active{color:#f6d276;opacity:1;text-shadow:0 0 9px rgba(246,210,118,.45)}
+  #siteHeader .mobile-language-switch span{color:#d9b65a;font-size:12px}
+  #siteHeader .mobile-header-whatsapp{
+    grid-column:2;grid-row:1;width:44px!important;min-width:44px!important;
+    height:44px!important;padding:0!important;border-radius:50%!important;
+    border:1.5px solid #20c66b!important;background:#092b20!important;
+    color:#25d366!important;display:flex!important;align-items:center;justify-content:center;
+    box-shadow:0 0 0 2px rgba(255,255,255,.12),0 0 15px rgba(37,211,102,.25)!important;
+  }
+  #siteHeader .mobile-header-whatsapp svg{display:block;width:27px;height:27px}
+  #siteHeader .mobile-menu-button{grid-column:3;grid-row:1}
+}
+@media(max-width:390px){
+  #siteHeader .mobile-header-controls{column-gap:8px!important}
+  #siteHeader .mobile-language-switch{gap:5px}
+  #siteHeader .mobile-language-choice{font-size:11px}
+}
