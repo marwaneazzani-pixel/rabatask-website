@@ -2542,3 +2542,14 @@ section[id]{scroll-margin-top:105px}
   .mobile-header-controls{gap:6px}
   .mobile-header-whatsapp,.mobile-menu-button{width:39px;height:39px;min-width:39px;flex-basis:39px}
 }
+
+
+/* Preserve the supplied circular logo cleanly on the mobile plum header */
+@media(max-width:900px){
+  .mobile-exact-logo{
+    border-radius:50%;
+    background:#fff;
+    object-fit:cover;
+    box-shadow:0 0 0 1px rgba(237,193,74,.85),0 3px 12px rgba(0,0,0,.28);
+  }
+}
