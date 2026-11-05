@@ -2673,3 +2673,14 @@ body[dir="rtl"] .service-grid-six .photo-glass{
   background-image:url('/images/nettoyage-vitres-ar.webp');
   background-position:center;
 }
+
+/* RABATASK bilingual post-construction campaign visual */
+#service-post .photo-post{
+  background-image:url('/images/nettoyage-apres-travaux-bilingual.webp');
+  background-size:200% 100%;
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+body[dir="rtl"] #service-post .photo-post{
+  background-position:right center;
+}
