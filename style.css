@@ -2684,3 +2684,17 @@ body[dir="rtl"] .service-grid-six .photo-glass{
 body[dir="rtl"] #service-post .photo-post{
   background-position:right center;
 }
+
+/* FIX: force the post-construction artwork to render in both language modes */
+#service-post .service-visual.photo-post{
+  background: url('/images/nettoyage-apres-travaux-bilingual.webp?v=2') center center / cover no-repeat !important;
+}
+body[dir="rtl"] #service-post .service-visual.photo-post{
+  background-image: url('/images/nettoyage-apres-travaux-bilingual.webp?v=2') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+#service-post .service-visual.photo-post:before,
+#service-post .service-visual.photo-post:after{
+  display:none !important;
+}
