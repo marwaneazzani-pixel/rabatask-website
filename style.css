@@ -2698,3 +2698,19 @@ body[dir="rtl"] #service-post .service-visual.photo-post{
 #service-post .service-visual.photo-post:after{
   display:none !important;
 }
+
+/* Reliable bilingual post-construction artwork: render as a real image element */
+#service-post .service-visual.photo-post{position:relative;overflow:hidden;background:#2b0b31!important}
+#service-post .service-visual.photo-post .post-construction-image{
+ position:absolute!important;top:0!important;left:0!important;
+ width:200%!important;max-width:none!important;height:100%!important;
+ object-fit:cover!important;object-position:left center!important;
+ display:block!important;z-index:0!important;
+}
+#service-post .service-visual.photo-post .visual-number,
+#service-post .service-visual.photo-post .visual-caption{z-index:2}
+body[dir="rtl"] #service-post .service-visual.photo-post .post-construction-image{
+ left:-100%!important;object-position:right center!important;
+}
+#service-post .service-visual.photo-post:before,
+#service-post .service-visual.photo-post:after{display:none!important}
