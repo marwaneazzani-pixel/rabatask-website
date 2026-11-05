@@ -2714,3 +2714,13 @@ body[dir="rtl"] #service-post .service-visual.photo-post .post-construction-imag
 }
 #service-post .service-visual.photo-post:before,
 #service-post .service-visual.photo-post:after{display:none!important}
+
+/* RABATASK expertise: display only the two dedicated service cards */
+.service-grid-rabatask{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:28px;
+}
+@media (max-width: 900px){
+ .service-grid-rabatask{grid-template-columns:1fr}
+}
