@@ -2663,3 +2663,13 @@ section[id]{scroll-margin-top:105px}
   #siteHeader .mobile-language-switch{gap:5px}
   #siteHeader .mobile-language-choice{font-size:11px}
 }
+
+/* RABATASK — window-cleaning image changes with the selected site language */
+.service-grid-six .photo-glass{
+  background-image:url('/images/nettoyage-vitres-fr.webp');
+  background-size:cover;background-position:center;
+}
+body[dir="rtl"] .service-grid-six .photo-glass{
+  background-image:url('/images/nettoyage-vitres-ar.webp');
+  background-position:center;
+}
