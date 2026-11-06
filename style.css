@@ -3197,3 +3197,90 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   .service-grid-rabatask > .service-card > .service-content{height:auto!important;min-height:240px!important;padding:24px!important}
   .service-grid-rabatask > .service-card .service-content h3{font-size:22px!important}
 }
+
+
+/* RABATASK hotfix 2026-11-06: override legacy image transforms and prevent grid overflow */
+#services.services.section-wrap{
+  width:100%!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  overflow-x:clip!important;
+}
+#services .service-grid-rabatask{
+  display:grid!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  column-gap:36px!important;
+  row-gap:28px!important;
+}
+#services .service-grid-rabatask > .service-card{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  grid-template-columns:minmax(0,42.5%) minmax(0,57.5%)!important;
+}
+#services .service-grid-rabatask > .service-card > .service-visual{
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  height:361px!important;
+  min-height:361px!important;
+  max-height:361px!important;
+  overflow:hidden!important;
+  position:relative!important;
+  background-image:none!important;
+}
+#services #service-post .service-visual.photo-post .post-cleaning-photo,
+#services #service-glass .service-visual.photo-glass .glass-cleaning-photo,
+#services #service-hood .service-visual.photo-hood .hood-cleaning-photo{
+  content:initial!important;
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  min-height:0!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  transform:none!important;
+  margin:0!important;
+  z-index:1!important;
+}
+#services #service-post .service-visual.photo-post .post-cleaning-photo{object-position:center 52%!important}
+#services #service-glass .service-visual.photo-glass .glass-cleaning-photo{object-position:center 45%!important}
+#services #service-hood .service-visual.photo-hood .hood-cleaning-photo{object-position:center 48%!important}
+#services #service-post .service-visual.photo-post .visual-number,
+#services #service-post .service-visual.photo-post .visual-caption{display:none!important}
+#services .service-grid-rabatask > .service-card > .service-content{
+  min-width:0!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:361px!important;
+  min-height:361px!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:1200px){
+  #services .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important}
+  #services .service-grid-rabatask > .service-card{grid-template-columns:minmax(0,40%) minmax(0,60%)!important;height:340px!important;min-height:340px!important}
+  #services .service-grid-rabatask > .service-card > .service-visual,
+  #services .service-grid-rabatask > .service-card > .service-content{height:340px!important;min-height:340px!important;max-height:340px!important}
+}
+@media(max-width:760px){
+  #services .service-grid-rabatask{grid-template-columns:minmax(0,1fr)!important;gap:20px!important}
+  #services .service-grid-rabatask > .service-card{grid-template-columns:minmax(0,42%) minmax(0,58%)!important;height:320px!important;min-height:320px!important}
+  #services .service-grid-rabatask > .service-card > .service-visual,
+  #services .service-grid-rabatask > .service-card > .service-content{height:320px!important;min-height:320px!important;max-height:320px!important}
+}
+@media(max-width:480px){
+  #services .service-grid-rabatask > .service-card{grid-template-columns:minmax(0,1fr)!important;height:auto!important;min-height:0!important}
+  #services .service-grid-rabatask > .service-card > .service-visual{height:220px!important;min-height:220px!important;max-height:220px!important}
+  #services .service-grid-rabatask > .service-card > .service-content{height:auto!important;min-height:240px!important}
+}
