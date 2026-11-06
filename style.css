@@ -2789,3 +2789,10 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   background-position:center !important;
   background-repeat:no-repeat !important;
 }
+
+
+/* RABATASK — restaurant extraction hood cleaning service */
+#service-hood .service-visual.photo-hood{position:relative!important;overflow:hidden!important;background:#2b0b31!important}
+#service-hood .service-visual.photo-hood .hood-cleaning-photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center center!important;max-width:none!important;z-index:0!important}
+#service-hood .service-visual.photo-hood::before,#service-hood .service-visual.photo-hood::after{display:none!important;content:none!important}
+#service-hood .service-visual.photo-hood .visual-number,#service-hood .service-visual.photo-hood .visual-caption{position:absolute!important;z-index:2!important}
