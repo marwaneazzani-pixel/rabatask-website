@@ -2761,3 +2761,22 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     background-size:cover !important;
   }
 }
+
+/* Real photo asset for post-construction cleaning — desktop, mobile and both languages */
+#service-post .service-visual.photo-post{
+ position:relative!important;overflow:hidden!important;background:#2b0b31!important;
+}
+#service-post .service-visual.photo-post .post-cleaning-photo{
+ position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+ display:block!important;object-fit:cover!important;object-position:center 52%!important;
+ max-width:none!important;z-index:0!important;
+}
+#service-post .service-visual.photo-post .visual-number,
+#service-post .service-visual.photo-post .visual-caption{position:absolute!important;z-index:2!important}
+#service-post .service-visual.photo-post::before,
+#service-post .service-visual.photo-post::after{display:none!important;content:none!important}
+@media(max-width:900px){
+ #service-post .service-visual.photo-post .post-cleaning-photo{
+  width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 52%!important;
+ }
+}
