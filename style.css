@@ -3051,3 +3051,48 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     min-height:361px!important;
   }
 }
+
+
+/* RABATASK reference image treatment: service team and work first */
+#service-post .service-visual.photo-post .post-cleaning-photo,
+#service-glass .service-visual.photo-glass .glass-cleaning-photo{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:200%!important;
+  max-width:none!important;
+  object-fit:fill!important;
+  z-index:0!important;
+}
+#service-post .service-visual.photo-post .post-cleaning-photo{
+  object-position:top center!important;
+  transform:translateY(0)!important;
+}
+#service-glass .service-visual.photo-glass .glass-cleaning-photo{
+  object-position:bottom center!important;
+  transform:translateY(-50%)!important;
+}
+#service-post .service-visual.photo-post,
+#service-glass .service-visual.photo-glass{
+  overflow:hidden!important;
+  background:#2b0b31!important;
+}
+#service-post .service-visual.photo-post::before,
+#service-post .service-visual.photo-post::after,
+#service-glass .service-visual.photo-glass::before,
+#service-glass .service-visual.photo-glass::after{
+  display:none!important;
+  content:none!important;
+}
+#service-post .service-visual.photo-post .visual-number,
+#service-post .service-visual.photo-post .visual-caption,
+#service-glass .service-visual.photo-glass .visual-caption{
+  display:none!important;
+}
+@media(min-width:1201px){
+ .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:36px!important}
+ .service-grid-rabatask>.service-card{grid-template-columns:42.5% 57.5%!important;height:361px!important;min-height:361px!important}
+ .service-grid-rabatask>.service-card>.service-visual,
+ .service-grid-rabatask>.service-card>.service-content{height:361px!important;min-height:361px!important}
+}
