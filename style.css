@@ -2780,3 +2780,12 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 52%!important;
  }
 }
+
+
+/* RABATASK — refreshed window-cleaning visual */
+#service-glass .service-visual.photo-glass{
+  background-image:url('/images/rabatask-glass-200.webp') !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
