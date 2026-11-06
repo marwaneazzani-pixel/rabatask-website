@@ -3017,3 +3017,37 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   .service-grid-rabatask > .service-card > .service-content{height:auto!important;min-height:240px!important;padding:24px!important}
   .service-grid-rabatask > .service-card .service-content h3{font-size:22px!important}
 }
+
+
+/* RABATASK correction: clean image rendering and precise reference proportions */
+#service-glass .service-visual.photo-glass{
+  background-image:none!important;
+  background-color:#2b0b31!important;
+}
+#service-glass .service-visual.photo-glass .glass-cleaning-photo{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  z-index:0!important;
+}
+@media(min-width:1201px){
+  .service-grid-rabatask{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:36px!important;
+  }
+  .service-grid-rabatask > .service-card{
+    grid-template-columns:42.5% 57.5%!important;
+    height:361px!important;
+    min-height:361px!important;
+  }
+  .service-grid-rabatask > .service-card > .service-visual,
+  .service-grid-rabatask > .service-card > .service-content{
+    height:361px!important;
+    min-height:361px!important;
+  }
+}
