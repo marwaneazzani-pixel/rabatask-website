@@ -2898,3 +2898,122 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   .service-grid-rabatask .service-visual{height:210px!important;min-height:210px!important}
   .service-grid-rabatask .service-content{height:auto!important;min-height:245px!important;padding:22px!important}
 }
+
+
+/* RABATASK — reference-matched expertise cards (1809px desktop reference) */
+.service-grid-rabatask{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  column-gap:36px!important;
+  row-gap:28px!important;
+  align-items:stretch!important;
+}
+.service-grid-rabatask > .service-card{
+  display:grid!important;
+  grid-template-columns:42.45% minmax(0,57.55%)!important;
+  width:100%!important;
+  min-width:0!important;
+  height:361px!important;
+  min-height:361px!important;
+  overflow:hidden!important;
+  align-items:stretch!important;
+}
+.service-grid-rabatask > .service-card > .service-visual{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  height:361px!important;
+  min-height:361px!important;
+  max-height:361px!important;
+  overflow:hidden!important;
+  background:#2b0b31!important;
+}
+.service-grid-rabatask > .service-card > .service-content{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  width:100%!important;
+  height:361px!important;
+  min-height:361px!important;
+  padding:34px 31px!important;
+  overflow:hidden!important;
+}
+.service-grid-rabatask > .service-card .service-content h3{
+  font-size:27px!important;
+  line-height:1.18!important;
+  margin:18px 0 14px!important;
+  overflow-wrap:normal!important;
+}
+.service-grid-rabatask > .service-card .service-content p{
+  font-size:13px!important;
+  line-height:1.85!important;
+  margin:0 0 18px!important;
+}
+.service-grid-rabatask > .service-card .service-tag{
+  font-size:9px!important;
+  letter-spacing:.17em!important;
+}
+.service-grid-rabatask > .service-card .text-link{
+  font-size:12px!important;
+  margin-top:auto!important;
+}
+#service-post .service-visual.photo-post .post-cleaning-photo,
+#service-glass .service-visual.photo-glass .glass-cleaning-photo,
+#service-hood .service-visual.photo-hood .hood-cleaning-photo{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  z-index:0!important;
+}
+#service-post .service-visual.photo-post .post-cleaning-photo{object-position:center 52%!important}
+#service-glass .service-visual.photo-glass .glass-cleaning-photo{object-position:center center!important}
+#service-hood .service-visual.photo-hood .hood-cleaning-photo{object-position:center center!important}
+#service-post .service-visual.photo-post::before,
+#service-post .service-visual.photo-post::after,
+#service-glass .service-visual.photo-glass::before,
+#service-glass .service-visual.photo-glass::after,
+#service-hood .service-visual.photo-hood::before,
+#service-hood .service-visual.photo-hood::after{
+  display:none!important;
+  content:none!important;
+}
+#service-post .service-visual.photo-post .visual-number,
+#service-post .service-visual.photo-post .visual-caption{
+  display:none!important;
+}
+.service-grid-rabatask .service-visual .visual-number,
+.service-grid-rabatask .service-visual .visual-caption{
+  position:absolute!important;
+  z-index:2!important;
+  text-shadow:0 1px 5px rgba(0,0,0,.65)!important;
+}
+@media(max-width:1200px){
+  .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important}
+  .service-grid-rabatask > .service-card{grid-template-columns:40% 60%!important;height:340px!important;min-height:340px!important}
+  .service-grid-rabatask > .service-card > .service-visual,
+  .service-grid-rabatask > .service-card > .service-content{height:340px!important;min-height:340px!important}
+  .service-grid-rabatask > .service-card > .service-content{padding:27px 22px!important}
+  .service-grid-rabatask > .service-card .service-content h3{font-size:22px!important}
+}
+@media(max-width:760px){
+  .service-grid-rabatask{grid-template-columns:1fr!important;gap:20px!important}
+  .service-grid-rabatask > .service-card{grid-template-columns:42% 58%!important;height:320px!important;min-height:320px!important}
+  .service-grid-rabatask > .service-card > .service-visual,
+  .service-grid-rabatask > .service-card > .service-content{height:320px!important;min-height:320px!important}
+  .service-grid-rabatask > .service-card > .service-content{padding:23px 18px!important}
+  .service-grid-rabatask > .service-card .service-content h3{font-size:20px!important}
+  .service-grid-rabatask > .service-card .service-content p{font-size:11px!important}
+}
+@media(max-width:480px){
+  .service-grid-rabatask > .service-card{grid-template-columns:1fr!important;height:auto!important;min-height:0!important}
+  .service-grid-rabatask > .service-card > .service-visual{height:220px!important;min-height:220px!important;max-height:220px!important}
+  .service-grid-rabatask > .service-card > .service-content{height:auto!important;min-height:240px!important;padding:24px!important}
+  .service-grid-rabatask > .service-card .service-content h3{font-size:22px!important}
+}
