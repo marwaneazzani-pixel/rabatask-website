@@ -2879,7 +2879,7 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
 }
 .service-grid-rabatask .service-tag{font-size:7.5px!important;line-height:1.5!important}
 .service-grid-rabatask .text-link{font-size:9px!important;line-height:1.5!important;margin-top:auto!important}
-@media(max-width:1099px){
+@media(max-width:1199px){
   .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .service-grid-rabatask .service-card{grid-template-columns:40% 60%!important;height:320px!important;min-height:320px!important}
   .service-grid-rabatask .service-visual,
