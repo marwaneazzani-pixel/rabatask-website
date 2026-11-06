@@ -2796,3 +2796,105 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
 #service-hood .service-visual.photo-hood .hood-cleaning-photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center center!important;max-width:none!important;z-index:0!important}
 #service-hood .service-visual.photo-hood::before,#service-hood .service-visual.photo-hood::after{display:none!important;content:none!important}
 #service-hood .service-visual.photo-hood .visual-number,#service-hood .service-visual.photo-hood .visual-caption{position:absolute!important;z-index:2!important}
+
+
+/* RABATASK — consistent service cards, image framing and responsive layout */
+.service-grid-rabatask{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+.service-grid-rabatask .service-card{
+  display:grid!important;
+  grid-template-columns:42% 58%!important;
+  min-width:0!important;
+  min-height:340px!important;
+  height:340px!important;
+  overflow:hidden!important;
+  align-items:stretch!important;
+}
+.service-grid-rabatask .service-visual{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  height:340px!important;
+  min-height:340px!important;
+  overflow:hidden!important;
+  background-color:#2b0b31!important;
+}
+#service-post .service-visual.photo-post .post-cleaning-photo,
+#service-hood .service-visual.photo-hood .hood-cleaning-photo{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  z-index:0!important;
+}
+#service-glass .service-visual.photo-glass{
+  background-image:url('/images/rabatask-glass-200.webp')!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+#service-post .service-visual.photo-post::before,
+#service-post .service-visual.photo-post::after,
+#service-glass .service-visual.photo-glass::before,
+#service-glass .service-visual.photo-glass::after,
+#service-hood .service-visual.photo-hood::before,
+#service-hood .service-visual.photo-hood::after{
+  display:none!important;
+  content:none!important;
+}
+.service-grid-rabatask .service-visual .visual-number,
+.service-grid-rabatask .service-visual .visual-caption{
+  position:absolute!important;
+  z-index:2!important;
+  text-shadow:0 1px 5px rgba(0,0,0,.55)!important;
+}
+.service-grid-rabatask .service-content{
+  min-width:0!important;
+  min-height:340px!important;
+  height:340px!important;
+  padding:24px 18px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+}
+.service-grid-rabatask .service-content h3{
+  font-size:clamp(16px,1.35vw,20px)!important;
+  line-height:1.18!important;
+  overflow-wrap:anywhere!important;
+  margin:12px 0 10px!important;
+}
+.service-grid-rabatask .service-content p{
+  font-size:10px!important;
+  line-height:1.75!important;
+  margin:0 0 14px!important;
+}
+.service-grid-rabatask .service-tag{font-size:7.5px!important;line-height:1.5!important}
+.service-grid-rabatask .text-link{font-size:9px!important;line-height:1.5!important;margin-top:auto!important}
+@media(max-width:1099px){
+  .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .service-grid-rabatask .service-card{grid-template-columns:40% 60%!important;height:320px!important;min-height:320px!important}
+  .service-grid-rabatask .service-visual,
+  .service-grid-rabatask .service-content{height:320px!important;min-height:320px!important}
+}
+@media(max-width:680px){
+  .service-grid-rabatask{grid-template-columns:1fr!important;gap:16px!important}
+  .service-grid-rabatask .service-card{grid-template-columns:40% 60%!important;height:290px!important;min-height:290px!important}
+  .service-grid-rabatask .service-visual,
+  .service-grid-rabatask .service-content{height:290px!important;min-height:290px!important}
+  .service-grid-rabatask .service-content{padding:20px 16px!important}
+  .service-grid-rabatask .service-content h3{font-size:18px!important}
+}
+@media(max-width:430px){
+  .service-grid-rabatask .service-card{grid-template-columns:1fr!important;height:auto!important;min-height:0!important}
+  .service-grid-rabatask .service-visual{height:210px!important;min-height:210px!important}
+  .service-grid-rabatask .service-content{height:auto!important;min-height:245px!important;padding:22px!important}
+}
