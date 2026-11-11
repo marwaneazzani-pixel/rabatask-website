@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="t d">
+<title id="t">RABATASK — Nettoyage après travaux</title><desc id="d">Emblème circulaire violet et or pour le nettoyage professionnel après travaux.</desc>
+<defs>
+ <radialGradient id="p" cx="50%" cy="38%" r="68%"><stop stop-color="#46205f"/><stop offset=".62" stop-color="#21072f"/><stop offset="1" stop-color="#100218"/></radialGradient>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4b6"/><stop offset=".18" stop-color="#e7a52b"/><stop offset=".38" stop-color="#fff1a0"/><stop offset=".62" stop-color="#b96b0b"/><stop offset=".82" stop-color="#ffe58a"/><stop offset="1" stop-color="#c67a14"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5d9ff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="#d9b6ff" stop-opacity=".3"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="720" height="900" fill="#17051f"/><rect width="720" height="900" fill="url(#p)"/>
+<g opacity=".18" stroke="#a997bd" stroke-width="8" fill="none"><path d="M55 0V900M175 0V900M295 0V900M415 0V900M535 0V900M655 0V900"/><path d="M0 180H720M0 360H720M0 540H720"/></g>
+<circle cx="360" cy="385" r="296" fill="#ffbf42" opacity=".32" filter="url(#blur)"/>
+<circle cx="360" cy="385" r="292" fill="url(#p)" stroke="url(#g)" stroke-width="13"/><circle cx="360" cy="385" r="277" fill="none" stroke="#ffe7a0" stroke-opacity=".5" stroke-width="2"/>
+<g opacity=".2" fill="url(#glass)"><path d="M90 190L300 93V670H90Z"/><path d="M320 93H615V670H320Z"/></g>
+<!-- sparkle and clean room -->
+<g fill="#fff"><path d="M530 112l10 27 27 10-27 10-10 27-10-27-27-10 27-10z"/><path d="M485 145l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/><path d="M180 350l9 23 23 9-23 9-9 23-9-23-23-9 23-9z"/></g>
+<!-- construction dust / wall and floor -->
+<path d="M210 210H510V430H210Z" fill="#170a2c" fill-opacity=".35" stroke="#fff" stroke-width="12" stroke-linejoin="round"/>
+<path d="M235 235H485V405H235Z" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="4"/>
+<path d="M210 430L175 465H545L510 430" fill="#fff" opacity=".14" stroke="#fff" stroke-width="9" stroke-linejoin="round"/>
+<!-- vacuum cleaner -->
+<g transform="translate(245 340)" stroke="#fff" stroke-width="11" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M25 35Q25 5 55 5H145Q175 5 175 35V125Q175 160 140 160H65Q25 160 25 125Z" fill="#fff" fill-opacity=".08"/>
+ <path d="M70 5V-25H130V5M145 45Q190 15 205 50L225 95" fill="none"/>
+ <path d="M225 95L250 145" fill="none"/><path d="M210 150H265" fill="none"/>
+ <circle cx="62" cy="174" r="17" fill="#fff"/><circle cx="145" cy="174" r="17" fill="#fff"/>
+</g>
+<!-- broom -->
+<g transform="translate(460 310) rotate(24)" stroke="#fff" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" fill="none">
+ <path d="M45 0L-5 210"/><path d="M-45 205L42 225L20 275L-75 252Z" fill="#fff" fill-opacity=".12"/>
+ <path d="M-60 255L-75 275M-35 260L-45 284M-10 265L-15 290M15 270L15 292M40 274L45 290" />
+</g>
+<g fill="#fff" opacity=".9"><circle cx="205" cy="465" r="5"/><circle cx="225" cy="485" r="4"/><circle cx="500" cy="470" r="5"/><path d="M355 125l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/></g>
+<text x="360" y="570" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700" font-style="italic">Nettoyage</text>
+<text x="360" y="630" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="43" font-weight="700" font-style="italic">après travaux</text>
+<path d="M245 675Q360 635 475 675" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round"/>
+<path d="M82 640Q205 790 360 792Q520 790 638 640" fill="none" stroke="url(#g)" stroke-width="10"/>
+<path d="M100 646Q230 745 360 744Q500 744 620 645" fill="none" stroke="#d32cff" stroke-opacity=".6" stroke-width="5"/>
+</svg>
