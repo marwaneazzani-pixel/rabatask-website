@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="t d">
+<title id="t">RABATASK — Nettoyage des hottes de restaurant</title><desc id="d">Emblème circulaire violet et or illustrant le dégraissage professionnel des hottes de cuisine.</desc>
+<defs>
+ <radialGradient id="p" cx="50%" cy="38%" r="68%"><stop stop-color="#46205f"/><stop offset=".62" stop-color="#21072f"/><stop offset="1" stop-color="#100218"/></radialGradient>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4b6"/><stop offset=".18" stop-color="#e7a52b"/><stop offset=".38" stop-color="#fff1a0"/><stop offset=".62" stop-color="#b96b0b"/><stop offset=".82" stop-color="#ffe58a"/><stop offset="1" stop-color="#c67a14"/></linearGradient>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".3" stop-color="#aab0bd"/><stop offset=".52" stop-color="#f4f1e8"/><stop offset="1" stop-color="#747b8d"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="720" height="900" fill="#17051f"/><rect width="720" height="900" fill="url(#p)"/>
+<g opacity=".18" stroke="#a997bd" stroke-width="8" fill="none"><path d="M55 0V900M175 0V900M295 0V900M415 0V900M535 0V900M655 0V900"/><path d="M0 180H720M0 360H720M0 540H720"/></g>
+<circle cx="360" cy="385" r="296" fill="#ffbf42" opacity=".32" filter="url(#blur)"/>
+<circle cx="360" cy="385" r="292" fill="url(#p)" stroke="url(#g)" stroke-width="13"/><circle cx="360" cy="385" r="277" fill="none" stroke="#ffe7a0" stroke-opacity=".5" stroke-width="2"/>
+<!-- kitchen hood canopy -->
+<path d="M205 245H515L485 310H235Z" fill="url(#steel)" stroke="#fff" stroke-width="10" stroke-linejoin="round"/>
+<path d="M235 310H485V355H235Z" fill="#261137" stroke="#fff" stroke-width="9"/>
+<path d="M260 322H460V345H260Z" fill="#c4c8d1" opacity=".8"/>
+<path d="M260 355V405H460V355" fill="none" stroke="#fff" stroke-width="10"/>
+<path d="M282 365V395M315 365V395M348 365V395M381 365V395M414 365V395" stroke="#d5d9e1" stroke-width="7"/>
+<!-- grease removal bubbles and sparkle -->
+<g fill="#fff"><path d="M530 112l10 27 27 10-27 10-10 27-10-27-27-10 27-10z"/><path d="M485 145l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/><path d="M180 350l9 23 23 9-23 9-9 23-9-23-23-9 23-9z"/></g>
+<!-- spray / degreaser bottle -->
+<g transform="translate(250 390)" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" fill="none">
+ <path d="M40 40H120L140 65L130 90L126 195Q124 220 100 220H58Q32 220 30 195L24 90L12 65L32 40"/>
+ <path d="M48 40V12H105L120 40M100 12L130 -5H175L185 8H145"/>
+ <path d="M55 155Q80 130 110 155" stroke="#d8b1ff"/>
+</g>
+<!-- cleaning brush -->
+<g transform="translate(440 390) rotate(18)" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M35 0L-10 170"/><path d="M-62 170H45L30 220H-50Z" fill="#fff" fill-opacity=".16"/>
+ <path d="M-52 221L-58 244M-30 221L-32 248M-8 221L-6 250M15 221L18 248M36 221L42 244"/>
+</g>
+<!-- steam lines -->
+<g fill="none" stroke="#e9d9ff" stroke-width="8" stroke-linecap="round" opacity=".9"><path d="M300 190Q275 165 300 140Q325 115 300 90"/><path d="M360 185Q335 160 360 135Q385 110 360 85"/><path d="M420 190Q395 165 420 140Q445 115 420 90"/></g>
+<text x="360" y="570" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700" font-style="italic">Nettoyage des</text>
+<text x="360" y="630" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700" font-style="italic">hottes restaurant</text>
+<path d="M245 675Q360 635 475 675" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round"/>
+<path d="M82 640Q205 790 360 792Q520 790 638 640" fill="none" stroke="url(#g)" stroke-width="10"/>
+<path d="M100 646Q230 745 360 744Q500 744 620 645" fill="none" stroke="#d32cff" stroke-opacity=".6" stroke-width="5"/>
+</svg>
