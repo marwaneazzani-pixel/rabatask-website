@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="t d">
+<title id="t">RABATASK — Nettoyage des Vitres</title><desc id="d">Emblème circulaire violet et or pour le nettoyage des vitres.</desc>
+<defs>
+ <radialGradient id="purple" cx="50%" cy="38%" r="68%"><stop stop-color="#46205f"/><stop offset=".62" stop-color="#21072f"/><stop offset="1" stop-color="#100218"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4b6"/><stop offset=".18" stop-color="#e7a52b"/><stop offset=".38" stop-color="#fff1a0"/><stop offset=".62" stop-color="#b96b0b"/><stop offset=".82" stop-color="#ffe58a"/><stop offset="1" stop-color="#c67a14"/></linearGradient>
+ <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5d9ff" stop-opacity=".65"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#d9b6ff" stop-opacity=".28"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="720" height="900" fill="#17051f"/>
+<rect width="720" height="900" fill="url(#purple)"/>
+<g opacity=".22" stroke="#9d8ab5" stroke-width="8" fill="none"><path d="M40 0V900M160 0V900M280 0V900M400 0V900M520 0V900M640 0V900"/><path d="M0 180H720M0 360H720M0 540H720"/></g>
+<circle cx="360" cy="385" r="296" fill="#ffbf42" opacity=".35" filter="url(#blur)"/>
+<circle cx="360" cy="385" r="292" fill="url(#purple)" stroke="url(#gold)" stroke-width="13"/>
+<circle cx="360" cy="385" r="277" fill="none" stroke="#ffe7a0" stroke-opacity=".5" stroke-width="2"/>
+<g opacity=".23" fill="url(#shine)"><path d="M90 190L300 93V670H90Z"/><path d="M320 93H615V670H320Z"/></g>
+<!-- window -->
+<rect x="223" y="185" width="274" height="250" rx="14" fill="#160b2b" fill-opacity=".42" stroke="#fff" stroke-width="13"/>
+<rect x="240" y="202" width="240" height="216" rx="5" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="4"/>
+<path d="M360 190V431M230 310H490" stroke="#fff" stroke-width="8"/>
+<path d="M246 208L344 208L246 306Z" fill="#fff" opacity=".17"/>
+<!-- squeegee -->
+<g transform="rotate(-16 390 380)"><rect x="305" y="345" width="205" height="25" rx="8" fill="#fff"/><path d="M330 370H485L466 390H350Z" fill="#fff"/><path d="M390 389H425L425 510Q407 535 390 510Z" fill="#fff"/></g>
+<!-- spray bottle -->
+<g transform="translate(458 365)" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round"><path d="M18 22H80L97 42L91 60L88 160Q86 177 69 177H31Q14 177 12 160L8 60L0 42L15 22"/><path d="M22 22V3H68L80 22M29 135Q49 112 73 132"/><path d="M33 145Q48 122 66 140Q53 158 33 145Z" fill="#fff" stroke="none"/></g>
+<!-- sparkle -->
+<g fill="#fff"><path d="M530 112l10 27 27 10-27 10-10 27-10-27-27-10 27-10z"/><path d="M485 145l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/><path d="M180 350l9 23 23 9-23 9-9 23-9-23-23-9 23-9z"/></g>
+<text x="360" y="570" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="700" font-style="italic">Nettoyage</text>
+<text x="360" y="632" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="700" font-style="italic">des Vitres</text>
+<path d="M245 675Q360 635 475 675" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+<path d="M82 640Q205 790 360 792Q520 790 638 640" fill="none" stroke="url(#gold)" stroke-width="10"/>
+<path d="M100 646Q230 745 360 744Q500 744 620 645" fill="none" stroke="#d32cff" stroke-opacity=".6" stroke-width="5"/>
+</svg>
