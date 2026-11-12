@@ -3364,3 +3364,40 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
  #services .service-grid-rabatask>.service-card>.service-visual{height:210px!important;min-height:210px!important;max-height:210px!important;padding:10px!important}
  #services .service-grid-rabatask>.service-card>.service-content{height:auto!important;min-height:230px!important;padding:22px!important}
 }
+
+
+/* FINAL SERVICE ART SCALE — match the compact canapé visual reference */
+#services .service-grid-rabatask .service-visual{
+  background:#21072f!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+}
+#services .service-grid-rabatask .service-visual>img{
+  position:relative!important;
+  inset:auto!important;
+  width:56%!important;
+  height:56%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:56%!important;
+  max-height:56%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  margin:0 auto!important;
+  padding:0!important;
+  transform:none!important;
+  border:0!important;
+  border-radius:0!important;
+}
+@media(max-width:760px){
+  #services .service-grid-rabatask .service-visual>img{
+    width:58%!important;height:58%!important;max-width:58%!important;max-height:58%!important;
+  }
+}
+@media(max-width:480px){
+  #services .service-grid-rabatask .service-visual>img{
+    width:54%!important;height:54%!important;max-width:54%!important;max-height:54%!important;
+  }
+}
