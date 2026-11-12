@@ -3302,3 +3302,94 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
 @media(max-width:1200px){#services .service-grid-rabatask{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important}#services .service-grid-rabatask>.service-card{grid-template-columns:minmax(0,40fr) minmax(0,60fr)!important;height:340px!important;min-height:340px!important}#services .service-grid-rabatask>.service-card>.service-visual,#services .service-grid-rabatask>.service-card>.service-content{height:340px!important;min-height:340px!important;max-height:340px!important}#services .service-grid-rabatask>.service-card>.service-content{padding:27px 22px!important}}
 @media(max-width:760px){#services .service-grid-rabatask{grid-template-columns:minmax(0,1fr)!important;gap:20px!important}#services .service-grid-rabatask>.service-card{grid-template-columns:minmax(0,42fr) minmax(0,58fr)!important;height:320px!important;min-height:320px!important}#services .service-grid-rabatask>.service-card>.service-visual,#services .service-grid-rabatask>.service-card>.service-content{height:320px!important;min-height:320px!important;max-height:320px!important}#services .service-grid-rabatask>.service-card>.service-content{padding:23px 18px!important}}
 @media(max-width:480px){#services .service-grid-rabatask>.service-card{grid-template-columns:minmax(0,1fr)!important;height:auto!important;min-height:0!important}#services .service-grid-rabatask>.service-card>.service-visual{height:220px!important;min-height:220px!important;max-height:220px!important}#services .service-grid-rabatask>.service-card>.service-content{height:auto!important;min-height:240px!important;padding:24px!important}}
+
+
+/* RABATASK MOBILE SERVICES — all five service cards visible and correctly stacked */
+@media (max-width: 760px) {
+  #services,
+  #services .service-grid-rabatask {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  #services .service-grid-rabatask {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+  }
+  #services .service-grid-rabatask > .service-card {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: 230px auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 230px !important;
+    min-height: 230px !important;
+    max-height: 230px !important;
+    overflow: hidden !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 24px 22px !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+  #services .service-grid-rabatask > .service-card .service-content h3 {
+    font-size: clamp(20px, 5vw, 25px) !important;
+    line-height: 1.25 !important;
+    margin: 14px 0 12px !important;
+    overflow-wrap: anywhere !important;
+  }
+  #services .service-grid-rabatask > .service-card .service-content p {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 18px !important;
+  }
+  #services .service-grid-rabatask > .service-card .text-link {
+    margin-top: 8px !important;
+  }
+}
+@media (max-width: 480px) {
+  #services .service-grid-rabatask { gap: 18px !important; }
+  #services .service-grid-rabatask > .service-card {
+    grid-template-rows: 205px auto !important;
+    border-radius: 16px !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    height: 205px !important;
+    min-height: 205px !important;
+    max-height: 205px !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-content {
+    padding: 21px 19px !important;
+  }
+}
