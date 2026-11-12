@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="t d">
+<title id="t">RABATASK — Location de matériel</title><desc id="d">Badge violet et or illustrant la location de matériel professionnel de nettoyage.</desc>
+<defs><radialGradient id="p" cx="50%" cy="35%" r="70%"><stop stop-color="#46205f"/><stop offset=".65" stop-color="#21072f"/><stop offset="1" stop-color="#100218"/></radialGradient><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4b6"/><stop offset=".25" stop-color="#e7a52b"/><stop offset=".5" stop-color="#fff1a0"/><stop offset=".78" stop-color="#b96b0b"/><stop offset="1" stop-color="#ffe58a"/></linearGradient></defs>
+<rect width="720" height="900" fill="#17051f"/><rect width="720" height="900" fill="url(#p)"/>
+<g opacity=".13" stroke="#a997bd" stroke-width="7"><path d="M55 0V900M175 0V900M295 0V900M415 0V900M535 0V900M655 0V900"/></g>
+<circle cx="360" cy="385" r="292" fill="url(#p)" stroke="url(#g)" stroke-width="13"/><circle cx="360" cy="385" r="277" fill="none" stroke="#ffe7a0" stroke-opacity=".35" stroke-width="2"/>
+<!-- professional cleaning equipment -->
+<g stroke="#fff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="#fff" fill-opacity=".08">
+ <rect x="205" y="265" width="155" height="180" rx="24"/>
+ <path d="M245 265V230H320V265M230 315H340M260 445V485M325 445V485" fill="none"/>
+ <circle cx="242" cy="495" r="15" fill="#fff"/><circle cx="330" cy="495" r="15" fill="#fff"/>
+ <path d="M360 315H435Q465 315 465 345V445H385V350" fill="none"/>
+ <path d="M425 315V265H485L510 295" fill="none"/>
+ <path d="M470 445V485M515 445V485" fill="none"/>
+ <circle cx="470" cy="495" r="15" fill="#fff"/><circle cx="515" cy="495" r="15" fill="#fff"/>
+</g>
+<g fill="#fff"><path d="M530 125l9 23 23 9-23 9-9 23-9-23-23-9 23-9z"/><path d="M180 350l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/></g>
+<text x="360" y="565" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700" font-style="italic">Location de</text>
+<text x="360" y="625" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700" font-style="italic">matériel</text>
+<path d="M265 665Q360 635 455 665" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round"/>
+<path d="M95 700Q220 795 360 795Q500 795 625 700" fill="none" stroke="url(#g)" stroke-width="9"/><path d="M110 706Q235 765 360 765Q485 765 610 706" fill="none" stroke="#b52bd0" stroke-width="4" opacity=".8"/>
+</svg>
