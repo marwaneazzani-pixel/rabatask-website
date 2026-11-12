@@ -3692,3 +3692,18 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     margin:auto!important;
   }
 }
+
+
+/* DESKTOP: specifically reduce the first three service badges */
+@media (min-width: 761px) {
+  #services #service-post .service-visual > img,
+  #services #service-glass .service-visual > img,
+  #services #service-hood .service-visual > img {
+    width:48%!important;
+    height:48%!important;
+    max-width:48%!important;
+    max-height:48%!important;
+    object-fit:contain!important;
+    object-position:center!important;
+  }
+}
