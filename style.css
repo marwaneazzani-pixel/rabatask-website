@@ -3457,3 +3457,33 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     margin: 0 auto !important;
   }
 }
+
+
+/* MOBILE: explicitly fit every RABATASK service badge, including the first three */
+@media (max-width: 760px) {
+  #services #service-post .service-visual > img,
+  #services #service-glass .service-visual > img,
+  #services #service-hood .service-visual > img,
+  #services #service-sofa .service-visual > img,
+  #services #service-home .service-visual > img {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+  #services #service-post .service-visual,
+  #services #service-glass .service-visual,
+  #services #service-hood .service-visual,
+  #services #service-sofa .service-visual,
+  #services #service-home .service-visual {
+    overflow: hidden !important;
+    background-color: #21072f !important;
+  }
+}
