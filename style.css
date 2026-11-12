@@ -3614,3 +3614,31 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DESKTOP SERVICE ARTWORK — preserve full circular badges, no horizontal crop */
+@media (min-width: 761px) {
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#21072f !important;
+    overflow:hidden !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position:relative !important;
+    inset:auto !important;
+    display:block !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    transform:none !important;
+    margin:0 auto !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual .visual-caption {
+    display:none !important;
+  }
+}
