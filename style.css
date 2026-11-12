@@ -3665,3 +3665,30 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     padding:30px 24px!important;
   }
 }
+
+
+/* DESKTOP FINAL IMAGE SCALE — smaller complete badge with breathing room */
+@media (min-width: 761px) {
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:20px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+    background:#21072f!important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position:relative!important;
+    inset:auto!important;
+    display:block!important;
+    width:64%!important;
+    height:64%!important;
+    max-width:64%!important;
+    max-height:64%!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    transform:none!important;
+    margin:auto!important;
+  }
+}
