@@ -3707,3 +3707,20 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     object-position:center!important;
   }
 }
+
+
+/* RABATASK production service visuals — match the sofa badge scale on desktop */
+@media (min-width: 761px) {
+  #services #service-post .service-visual > img,
+  #services #service-glass .service-visual > img,
+  #services #service-hood .service-visual > img {
+    width:64%!important;
+    height:64%!important;
+    max-width:64%!important;
+    max-height:64%!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    margin:auto!important;
+    transform:none!important;
+  }
+}
