@@ -3401,3 +3401,22 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     width:54%!important;height:54%!important;max-width:54%!important;max-height:54%!important;
   }
 }
+
+
+/* Final exact scale adjustment: match the small canapé artwork in the reference */
+#services .service-grid-rabatask .service-visual>img{
+  width:42%!important;
+  height:42%!important;
+  max-width:42%!important;
+  max-height:42%!important;
+}
+@media(max-width:760px){
+  #services .service-grid-rabatask .service-visual>img{
+    width:44%!important;height:44%!important;max-width:44%!important;max-height:44%!important;
+  }
+}
+@media(max-width:480px){
+  #services .service-grid-rabatask .service-visual>img{
+    width:42%!important;height:42%!important;max-width:42%!important;max-height:42%!important;
+  }
+}
