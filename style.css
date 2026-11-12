@@ -3524,3 +3524,48 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     margin: 0 !important;
   }
 }
+
+
+/* Equipment rental card — match the existing responsive service cards */
+#services #service-rental { box-sizing:border-box; }
+#services #service-rental .service-visual { overflow:hidden; }
+#services #service-rental .service-visual img { width:100%; height:100%; object-fit:cover; object-position:center; }
+@media (max-width:760px) {
+  #services #service-rental {
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    overflow:hidden!important;
+  }
+  #services #service-rental .service-visual {
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:1/1!important;
+    overflow:hidden!important;
+    background:#21072f!important;
+  }
+  #services #service-rental .service-visual img {
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    object-fit:contain!important;
+    object-position:center!important;
+  }
+  #services #service-rental .service-content {
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    padding:24px!important;
+    box-sizing:border-box!important;
+  }
+}
