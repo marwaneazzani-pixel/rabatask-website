@@ -3432,3 +3432,28 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     max-height: 220px !important;
   }
 }
+
+
+/* MOBILE IMAGE FIT — show the complete service artwork without cropping */
+@media (max-width: 760px) {
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #21072f !important;
+    overflow: hidden !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+}
