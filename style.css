@@ -3393,3 +3393,42 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     padding: 21px 19px !important;
   }
 }
+
+
+/* RABATASK MOBILE IMAGE FIX — show the complete service badge without cropping */
+@media (max-width: 760px) {
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    background: #1d0829 !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual .visual-number,
+  #services .service-grid-rabatask > .service-card > .service-visual .visual-caption {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+  }
+}
