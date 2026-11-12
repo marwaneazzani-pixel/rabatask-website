@@ -3448,3 +3448,18 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     margin:0!important;
   }
 }
+
+/* RABATASK service emblems — identical portrait frame, centered without crop */
+#services .service-grid-rabatask>.service-card>.service-visual{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  overflow:hidden!important;background:#21072f!important;padding:0!important;
+}
+#services #service-post .service-visual.photo-post .post-cleaning-photo,
+#services #service-glass .service-visual.photo-glass .glass-cleaning-photo,
+#services #service-hood .service-visual.photo-hood .hood-cleaning-photo{
+  position:relative!important;inset:auto!important;left:auto!important;top:auto!important;
+  display:block!important;width:100%!important;height:100%!important;
+  min-width:0!important;min-height:0!important;max-width:100%!important;max-height:100%!important;
+  object-fit:contain!important;object-position:center center!important;
+  transform:none!important;margin:0!important;padding:0!important;border:0!important;
+}
