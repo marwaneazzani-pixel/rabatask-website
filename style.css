@@ -3642,3 +3642,26 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     display:none !important;
   }
 }
+
+
+/* DESKTOP GRID WIDTH — keep both service columns inside the page */
+@media (min-width: 761px) {
+  #services .service-grid-rabatask {
+    width:100%!important;
+    max-width:1200px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    column-gap:28px!important;
+    row-gap:28px!important;
+  }
+  #services .service-grid-rabatask > .service-card {
+    min-width:0!important;
+    width:100%!important;
+    grid-template-columns:minmax(0,42.5%) minmax(0,57.5%)!important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-content {
+    min-width:0!important;
+    padding:30px 24px!important;
+  }
+}
