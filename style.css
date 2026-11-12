@@ -3420,3 +3420,31 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     width:42%!important;height:42%!important;max-width:42%!important;max-height:42%!important;
   }
 }
+
+
+/* DESKTOP OVERRIDE — enforce the same compact artwork scale on all service cards.
+   The previous per-service selectors used higher specificity and were overriding
+   the generic image sizing. These selectors intentionally match that specificity. */
+@media(min-width:761px){
+  #services #service-post .service-visual.photo-post .post-cleaning-photo,
+  #services #service-glass .service-visual.photo-glass .glass-cleaning-photo,
+  #services #service-hood .service-visual.photo-hood .hood-cleaning-photo{
+    position:absolute!important;
+    top:50%!important;
+    left:50%!important;
+    right:auto!important;
+    bottom:auto!important;
+    inset:auto!important;
+    display:block!important;
+    width:42%!important;
+    height:42%!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:42%!important;
+    max-height:42%!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    transform:translate(-50%,-50%)!important;
+    margin:0!important;
+  }
+}
