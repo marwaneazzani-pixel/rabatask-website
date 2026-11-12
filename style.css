@@ -3487,3 +3487,40 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     background-color: #21072f !important;
   }
 }
+
+
+/* MOBILE FINAL OVERRIDE — square image stage so complete badge artwork is visible */
+@media (max-width: 760px) {
+  #services .service-grid-rabatask > .service-card {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: 1 / 1 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: #21072f !important;
+  }
+  #services .service-grid-rabatask > .service-card > .service-visual > img {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+}
