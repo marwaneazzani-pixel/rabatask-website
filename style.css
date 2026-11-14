@@ -3782,3 +3782,40 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     z-index: 12 !important;
   }
 }
+
+
+/* RABATASK DESKTOP HERO — keep the artwork's own navigation text only.
+   Transparent anchor hotspots remain clickable; duplicated overlay labels
+   and the second phone/WhatsApp rendering are visually suppressed. */
+@media (min-width: 761px) {
+  .rabatask-hero .image-nav-hotspot {
+    display: block !important;
+    padding: 0 !important;
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    text-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    transform: none !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot span,
+  .rabatask-hero .image-nav-hotspot::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot:hover,
+  .rabatask-hero .image-nav-hotspot:focus-visible {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    outline: 2px solid rgba(245, 207, 105, .8) !important;
+    outline-offset: 2px !important;
+  }
+}
