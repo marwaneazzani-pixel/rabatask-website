@@ -3737,30 +3737,6 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     isolation: isolate !important;
   }
 
-  /* Smooth the vertical color seam in the supplied hero artwork. */
-  .rabatask-hero::before {
-    content: "" !important;
-    display: block !important;
-    position: absolute !important;
-    z-index: 5 !important;
-    pointer-events: none !important;
-    left: 40.5% !important;
-    top: 0 !important;
-    width: 15% !important;
-    height: 30% !important;
-    background:
-      linear-gradient(
-        90deg,
-        rgba(31, 0, 35, 0) 0%,
-        rgba(36, 0, 42, .16) 24%,
-        rgba(36, 0, 42, .28) 50%,
-        rgba(36, 0, 42, .14) 76%,
-        rgba(31, 0, 35, 0) 100%
-      ) !important;
-    -webkit-mask-image: radial-gradient(ellipse 95% 100% at 50% 12%, #000 0%, rgba(0,0,0,.82) 58%, transparent 100%) !important;
-    mask-image: radial-gradient(ellipse 95% 100% at 50% 12%, #000 0%, rgba(0,0,0,.82) 58%, transparent 100%) !important;
-  }
-
   /* Extend the original pink/gold light trail from its exact endpoint. */
   .rabatask-hero::after {
     content: "" !important;
@@ -3780,59 +3756,5 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
   .rabatask-hero .image-nav-hotspot,
   .rabatask-hero .hero-hotspot {
     z-index: 12 !important;
-  }
-}
-
-
-
-/* RABATASK desktop navigation repair:
-   retain original artwork labels, remove duplicate overlay text,
-   and restore gold hover/focus feedback on the real clickable anchors. */
-@media (min-width: 761px) {
-  .rabatask-hero .image-nav-hotspot {
-    display: block !important;
-    padding: 0 !important;
-    color: transparent !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    text-shadow: none !important;
-    border: 1px solid transparent !important;
-    border-radius: 9px !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    transform: none !important;
-    cursor: pointer !important;
-    transition: background .2s ease, border-color .2s ease, box-shadow .2s ease !important;
-  }
-
-  .rabatask-hero .image-nav-hotspot span,
-  .rabatask-hero .image-nav-hotspot::after {
-    display: none !important;
-    content: none !important;
-  }
-
-  .rabatask-hero .image-nav-hotspot:hover,
-  .rabatask-hero .image-nav-hotspot:focus-visible {
-    background: rgba(232, 184, 72, .16) !important;
-    border-color: rgba(245, 207, 105, .82) !important;
-    box-shadow: 0 0 0 2px rgba(245, 207, 105, .12),
-                0 0 17px rgba(232, 184, 72, .24),
-                inset 0 0 10px rgba(245, 207, 105, .12) !important;
-    transform: none !important;
-    outline: none !important;
-  }
-
-  .rabatask-hero .nav-phone {
-    border: 1px solid transparent !important;
-    border-radius: 999px !important;
-    background: transparent !important;
-  }
-  .rabatask-hero .nav-phone:hover,
-  .rabatask-hero .nav-phone:focus-visible {
-    background: rgba(232, 184, 72, .2) !important;
-    border-color: rgba(255, 222, 135, .95) !important;
-    box-shadow: 0 0 0 2px rgba(245, 207, 105, .15),
-                0 0 22px rgba(245, 207, 105, .4) !important;
   }
 }
