@@ -3784,9 +3784,10 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
 }
 
 
-/* RABATASK DESKTOP HERO — keep the artwork's own navigation text only.
-   Transparent anchor hotspots remain clickable; duplicated overlay labels
-   and the second phone/WhatsApp rendering are visually suppressed. */
+
+/* RABATASK desktop navigation repair:
+   retain original artwork labels, remove duplicate overlay text,
+   and restore gold hover/focus feedback on the real clickable anchors. */
 @media (min-width: 761px) {
   .rabatask-hero .image-nav-hotspot {
     display: block !important;
@@ -3795,12 +3796,14 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     font-size: 0 !important;
     line-height: 0 !important;
     text-shadow: none !important;
-    border: 0 !important;
-    border-radius: 0 !important;
+    border: 1px solid transparent !important;
+    border-radius: 9px !important;
     background: transparent !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
     transform: none !important;
+    cursor: pointer !important;
+    transition: background .2s ease, border-color .2s ease, box-shadow .2s ease !important;
   }
 
   .rabatask-hero .image-nav-hotspot span,
@@ -3811,11 +3814,25 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
 
   .rabatask-hero .image-nav-hotspot:hover,
   .rabatask-hero .image-nav-hotspot:focus-visible {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
+    background: rgba(232, 184, 72, .16) !important;
+    border-color: rgba(245, 207, 105, .82) !important;
+    box-shadow: 0 0 0 2px rgba(245, 207, 105, .12),
+                0 0 17px rgba(232, 184, 72, .24),
+                inset 0 0 10px rgba(245, 207, 105, .12) !important;
     transform: none !important;
-    outline: 2px solid rgba(245, 207, 105, .8) !important;
-    outline-offset: 2px !important;
+    outline: none !important;
+  }
+
+  .rabatask-hero .nav-phone {
+    border: 1px solid transparent !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+  }
+  .rabatask-hero .nav-phone:hover,
+  .rabatask-hero .nav-phone:focus-visible {
+    background: rgba(232, 184, 72, .2) !important;
+    border-color: rgba(255, 222, 135, .95) !important;
+    box-shadow: 0 0 0 2px rgba(245, 207, 105, .15),
+                0 0 22px rgba(245, 207, 105, .4) !important;
   }
 }
