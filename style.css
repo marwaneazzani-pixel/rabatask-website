@@ -3758,3 +3758,102 @@ body[dir="rtl"] #service-glass .service-visual.photo-glass{
     z-index: 12 !important;
   }
 }
+
+
+/* FINAL DESKTOP NAV VISIBILITY FIX — one consistent gold style for every item.
+   Keep the dark artwork mask below the live anchors, never over the menu. */
+@media (min-width: 761px) {
+  .rabatask-hero::before {
+    z-index: 11 !important;
+    pointer-events: none !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot {
+    position: absolute !important;
+    z-index: 30 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 8.8% !important;
+    top: 5.5% !important;
+    padding: 0 3px !important;
+    color: #f7e8c5 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font-family: "DM Sans", sans-serif !important;
+    font-size: clamp(10px, .82vw, 13px) !important;
+    font-weight: 650 !important;
+    letter-spacing: .015em !important;
+    line-height: 1.2 !important;
+    text-shadow: 0 1px 8px rgba(18, 2, 27, .75) !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    filter: none !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    transition: color .25s ease, text-shadow .25s ease !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot span {
+    display: inline-block !important;
+    color: #f7e8c5 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font: inherit !important;
+    letter-spacing: inherit !important;
+    text-shadow: inherit !important;
+    transform: none !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot span::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    right: 50% !important;
+    bottom: -7px !important;
+    height: 2px !important;
+    border-radius: 2px !important;
+    background: linear-gradient(90deg, transparent, #f4d078, transparent) !important;
+    box-shadow: 0 0 9px rgba(244, 208, 120, .55) !important;
+    transition: left .28s ease, right .28s ease !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot:hover,
+  .rabatask-hero .image-nav-hotspot:focus-visible {
+    color: #ffe29a !important;
+    text-shadow: 0 0 12px rgba(244, 208, 120, .65) !important;
+    outline: none !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot:hover span,
+  .rabatask-hero .image-nav-hotspot:focus-visible span {
+    color: #ffe29a !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .rabatask-hero .image-nav-hotspot:hover span::after,
+  .rabatask-hero .image-nav-hotspot:focus-visible span::after {
+    left: -5px !important;
+    right: -5px !important;
+  }
+
+  .rabatask-hero .nav-home { left: 39.3% !important; width: 5.5% !important; }
+  .rabatask-hero .nav-services { left: 46% !important; width: 8.5% !important; }
+  .rabatask-hero .nav-about { left: 57.1% !important; width: 5.8% !important; }
+  .rabatask-hero .nav-why { left: 64.5% !important; width: 8.6% !important; }
+  .rabatask-hero .nav-contact { left: 75.1% !important; width: 5.3% !important; }
+
+  .rabatask-hero .nav-phone {
+    left: 83% !important;
+    top: 3.5% !important;
+    width: 13.3% !important;
+    height: 10% !important;
+    color: #ffe4a0 !important;
+    font-size: clamp(10px, .88vw, 14px) !important;
+    font-weight: 700 !important;
+  }
+  .rabatask-hero .nav-phone span { color: #ffe4a0 !important; }
+  .rabatask-hero .nav-phone span::after { display: none !important; }
+}
